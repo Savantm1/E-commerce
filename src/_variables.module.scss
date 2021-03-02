@@ -1,0 +1,64 @@
+
+// COLORS
+
+$black: rgba(21, 21, 21, 1);
+$black_hover:rgba(87, 87, 87, 1);
+$black_active:rgba(169, 169, 169, 1);
+
+$green:rgba(106, 152, 60, 1);
+$green_hover:rgba(70, 118, 10, 1);
+$green_active:rgba(146, 192, 100, 1);
+
+$brown: rgba(208, 168, 102, 1);
+$brown_hover:rgba(178, 138, 72, 1);
+$brown_active:rgba(236, 210, 166, 1);
+
+$orange:rgba(229, 112, 75, 1);
+$orange_hover:rgba(199, 82, 45, 1);
+$orange_active:rgba(235, 141, 112, 1);
+
+$cyan:rgba(55, 208, 214, 1);
+$cyan_hover:rgba(25, 178, 184, 1);
+$cyan_active:rgba(124, 208, 211, 1);
+
+
+
+// $tablets: 768px;
+// $phones: 480px;
+// $iphone: 320px;
+
+// @mixin desktop() {
+//   @media screen and (max-width:1440px) {
+//     @content;
+
+//   }
+// }
+
+// @mixin laptops() {
+//   @media screen and (max-width:1024px) {
+//     @content;
+
+//   }
+// }
+
+// @mixin tablets() {
+//   @media screen and (max-width:768px) {
+//     @content;
+
+//   }
+// }
+
+// @mixin phones() {
+//   @media screen and (max-width:480px) {
+//     @content;
+
+//   }
+// }
+
+
+// @mixin minPhone() {
+//   @media screen and (max-width:380px) {
+//     @content;
+
+//   }
+// }

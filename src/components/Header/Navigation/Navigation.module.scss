@@ -1,0 +1,33 @@
+@import "../../../variables.module";
+
+.navigation {
+  width: 100%;
+  display:flex;
+  border-bottom: 2px solid $black_active;
+}
+
+.info_list{
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+  width: 100%;
+
+  &__item {
+    margin-right: 20px;
+    
+  }
+  
+  &__link {
+    color:$green;
+    transition: all ease .3s;
+
+    &:hover {
+      color:$green_hover;
+      text-decoration: underline;
+    }
+  }
+
+  &:last-child{
+    justify-content: flex-end;
+  }
+}
