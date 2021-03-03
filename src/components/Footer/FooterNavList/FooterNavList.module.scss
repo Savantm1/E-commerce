@@ -1,0 +1,29 @@
+@import './../../../variables.module';
+
+
+.nav_title {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.nav_list {
+    text-align: center;
+
+    &__item {
+        margin: 16px 0px;
+    }
+
+    &__link {
+        color: $green;
+        text-align: center;
+    
+        &:hover {
+            color:$green_hover;
+            text-decoration: underline;
+        }
+    }
+}
+
+
+

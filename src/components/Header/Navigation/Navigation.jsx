@@ -29,9 +29,7 @@ const Navigation = (props) => {
             </NavLink>
           </li>
           <li className={styles.info_list__item}>
-            <a className={styles.info_list__link} 
-            href="tel:+79771242427"
-            >
+            <a className={styles.info_list__link} href="tel:+79771242427">
               +79771242427
             </a>
           </li>

@@ -1,0 +1,13 @@
+@import "../../../../variables.module";
+
+.tag_block {
+    background: $grey;
+    border-radius: 12px;
+    margin: 10px;
+}
+
+.tag_text {
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px;
+}
