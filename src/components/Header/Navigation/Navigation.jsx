@@ -2,12 +2,16 @@ import React from 'react'
 import styles from './Navigation.module.scss'
 import {NavLink} from "react-router-dom"
 
-let navItemsArr = ['Blog', 'About Us', 'Careers']
+let navItemsArr = [
+  {name: 'Blog', url: 'blog' },
+  {name: 'About Us', url: 'about_us' },
+  {name: 'Careers', url: 'careers' },
+]
 
 let  NavItems = navItemsArr.map(element => {
   return (
     <li className={styles.info_list__item}>
-      <NavLink className={styles.info_list__link} to={`/${element}`}>{element}</NavLink>
+      <NavLink className={styles.info_list__link} to={`/${element.url}`}>{element.name}</NavLink>
     </li>)    
 })
 
