@@ -1,0 +1,19 @@
+.select {
+    background: none;
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+    padding-right: 8px;
+    cursor: pointer;
+    outline: none;
+}
+
+.option {
+    font-weight: 700;
+    font-size: 15px;
+    background-color: red;
+    &:hover {
+        background-color: green;
+    }
+    
+}

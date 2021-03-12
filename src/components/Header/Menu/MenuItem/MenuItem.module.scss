@@ -1,0 +1,19 @@
+.item {
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+}
+
+
+.title {
+    font-weight: 500;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.arrow {
+    width: 15px;
+}
+

@@ -19,7 +19,7 @@ const tagsArray = [
   "Meat",
   "Sea tag",
   "Fresh food",
-  " Lemons",
+  "Lemons",
 ];
 
 let tags = tagsArray.map((element, index) => {

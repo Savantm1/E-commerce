@@ -1,8 +1,6 @@
-.header {
-  height: 200px;
-  background-color: #fff;
 
-  &__container {
+  .header__container {
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,4 +8,18 @@
     max-width: 1260px;
     width:100%;
   }
-}
+
+  .middle_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px 45px;
+  }
+
+  .person_block {
+    display: flex;
+    width: 100%;
+    max-width: 100px;
+    justify-content: space-between;
+    align-items: center;
+  }

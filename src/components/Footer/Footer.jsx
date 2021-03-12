@@ -42,24 +42,19 @@ const DataLists = [
   },
 ];
 
+const lists = DataLists.map((element, index) => {
+  return (
+    <FooterNavList title={element.nameList} key={index} list={element.list} />
+  );
+});
+
 const Footer = (props) => {
   return (
     <>
       <footer className={styles.footer}>
         <div className={styles.footer__container}>
-            <section className={styles.navigation_lists}>
-            {DataLists.map((element, index) => {
-            return (
-              <FooterNavList
-                title={element.nameList}
-                key={index}
-                list={element.list}
-              />
-            );
-          })}
-            </section>
-
-          <Tags/>
+          <section className={styles.navigation_lists}>{lists}</section>
+          <Tags />
         </div>
       </footer>
     </>
