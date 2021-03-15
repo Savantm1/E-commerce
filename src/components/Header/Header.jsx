@@ -1,5 +1,6 @@
 import React from "react";
 import Basket from "./Basket/Basket";
+import BreadcrumbsContainer from "./BreadcrumbsContainer/BreadcrumbsContainer";
 import styles from "./Header.module.scss";
 import Login from "./Login/Login";
 import Logo from "./Logo/Logo";
@@ -21,6 +22,7 @@ const Header = (props) => {
             </div>
           </div>   
           <Menu/>
+          <BreadcrumbsContainer/>
       </header>
     </>
   );

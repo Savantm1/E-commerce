@@ -32,6 +32,7 @@
   color: $black; 
   font-family: "Poppins";
   font-weight: 400;
+  box-sizing: border-box;
 }
 
 html {
@@ -42,8 +43,16 @@ html {
   display:flex;
   flex-direction: column;
   justify-content: space-between;
-  text-align: center;
+  align-items: center;
   background-image: url('./assets/img/background.jpg');
   min-height: 100vh;
   margin:0 auto;
+}
+
+
+.body__container {
+  max-width: 1260px;
+  background-color: #fff;
+  width: 100%;
+  padding: 65px 45px;
 }

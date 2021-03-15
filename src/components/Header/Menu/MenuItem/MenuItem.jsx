@@ -3,7 +3,6 @@ import styles from './MenuItem.module.scss'
 import arrow from  '../../../../assets/icons/ic-chevron-down.svg'
 
 const MenuItem = (props) => {
-    debugger
     return (
         <div className={styles.item}>
             <p className={styles.title}>{props.title}</p>

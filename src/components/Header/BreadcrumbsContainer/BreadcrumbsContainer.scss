@@ -1,0 +1,14 @@
+@import './../../../variables.module';
+
+.breadcrumbs__container {
+    padding: 16px 40px;
+}
+
+.MuiBreadcrumbs-li,
+.MuiBreadcrumbs-separator  {
+   color:$black-active;
+}
+
+.MuiBreadcrumbs-li a[aria-current="page"]{
+    color: black;
+}
