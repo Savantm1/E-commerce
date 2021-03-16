@@ -27,7 +27,6 @@ const StyledBrands = styled.div`
 `;
 
 const Brands = (props = BrandsData) => {
-  console.log(props);
   return (
     <StyledBrands {...props}>
       <Title>Brands</Title>

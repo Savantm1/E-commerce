@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import Brands from "./Brands/Brands";
 import Category from "./Categories/Category";
+import Rating from "./Rating/Rating";
+
 
 const StyledFilters = styled.aside`
   display: flex;
@@ -14,6 +16,7 @@ const Filters = (props) => {
     <StyledFilters {...props}>
       <Category />
       <Brands/>
+      <Rating/>
     </StyledFilters>
   );
 };

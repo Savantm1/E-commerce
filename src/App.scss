@@ -29,7 +29,6 @@
   margin: 0;
   list-style: none;
   text-decoration: none;
-  color: $black; 
   font-family: "Poppins";
   font-weight: 400;
   box-sizing: border-box;
@@ -37,6 +36,11 @@
 
 html {
   font-size: 14px;
+  color: $black; 
+}
+
+a {
+  color: $black; 
 }
 
 .App {

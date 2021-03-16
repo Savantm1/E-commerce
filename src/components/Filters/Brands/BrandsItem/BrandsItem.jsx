@@ -1,9 +1,11 @@
-import React from 'react'
-import styled from 'styled-components'
-import ItemCheckbox from './ItemCheckbox';
+import React from "react";
+import styled from "styled-components";
+import ItemCheckbox from "./ItemCheckbox";
 
 const StyledBrandsItem = styled.label`
   cursor: pointer;
+  position: relative;
+  padding-left: 30px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -14,14 +16,12 @@ const StyledBrandsItem = styled.label`
 `;
 
 const BrandsItem = (props) => {
-    return (
-            <StyledBrandsItem {...props}>
-                <ItemCheckbox/>
-                {props.itemName}
-            </StyledBrandsItem>
-
-
-    )
-}
+  return (
+    <StyledBrandsItem {...props}>
+      <ItemCheckbox />
+      {props.itemName}
+    </StyledBrandsItem>
+  );
+};
 
 export default BrandsItem;
