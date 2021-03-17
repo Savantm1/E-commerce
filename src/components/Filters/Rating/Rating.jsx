@@ -2,7 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import Title from "./../Title/Title";
 import RatingItem from "./RatingItem/RatingItem";
-const StyledRating = styled.div``;
+const StyledRating = styled.div`
+margin-bottom: 48px;
+`;
 
 const stars = [1, 2, 3, 4, 5];
 
@@ -12,7 +14,7 @@ const starsElements = stars.reverse().map((element) => {
 const Rating = (props) => {
   return (
     <StyledRating {...props}>
-      <Title>Rating</Title>
+      <Title>Price</Title>
       {starsElements}
     </StyledRating>
   );

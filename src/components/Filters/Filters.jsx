@@ -1,8 +1,10 @@
+
 import React from "react";
 import styled from "styled-components";
 import Brands from "./Brands/Brands";
 import Category from "./Categories/Category";
 import Rating from "./Rating/Rating";
+import SliderPrice from "./Slider/Slider";
 
 
 const StyledFilters = styled.aside`
@@ -17,6 +19,7 @@ const Filters = (props) => {
       <Category />
       <Brands/>
       <Rating/>
+      <SliderPrice/>
     </StyledFilters>
   );
 };
