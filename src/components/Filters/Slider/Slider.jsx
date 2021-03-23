@@ -4,6 +4,7 @@ import Title from "../Title/Title";
 import Slider from "@material-ui/core/Slider";
 import InputPriceContainer from "./InputPrice/InputPriceContainer";
 import Button from "../../Button/Button";
+import "./Slider.scss";
 
 const StyledSlider = styled.div`
   width: 250px;
@@ -34,7 +35,7 @@ const SliderPrice = (props) => {
       />
       <InputPriceContainer title="min"/>
       <InputPriceContainer title="max"/>
-      <div>
+      <div className="filter__buttons_block">
         <Button value="Apply" mr="20px"  />
         <Button value="Reset" bg="white" cl="#A9A9A9" border="none"/>
       </div>
