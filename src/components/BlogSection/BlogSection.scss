@@ -1,0 +1,10 @@
+.blog_section {
+
+    display: flex;
+    flex-direction: column;
+
+    .blog_section__content_block {
+        display: flex;
+        justify-content: space-between;
+    }
+}

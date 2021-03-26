@@ -1,10 +1,9 @@
 import "./App.scss"
 import Header from "./components/Header/Header"
 import Footer from "./components/Footer/Footer"
-import Filters from "./components/Filters/Filters"
-import InputText from "./components/UI/InputText/InputText"
-import ProductItem from "./components/ProductItem/ProductItem"
-import ProductItemRow from "./components/ProductItem/ProductItemRow/ProductItemRow"
+import CategorySectionRow from "./components/CategorySectionRow/CategorySectionRow"
+import CategorySectionRowProducts from "./components/CategorySectionRowProducts/CategorySectionRowProducts"
+import BlogSection from "./components/BlogSection/BlogSection"
 
 
 function App() {
@@ -12,10 +11,10 @@ function App() {
     <div className="App">
       <Header />
       <div className="body__container">
-        <Filters/>
-        <InputText title="hello"/>
-        <ProductItem/>
-        <ProductItemRow/>
+        <CategorySectionRow categoryName="Recipes"/>
+        <CategorySectionRowProducts categoryName="Best selling products"/>
+        <CategorySectionRowProducts categoryName="Best from Farmers"/>
+        <BlogSection/>
       </div>
       <Footer />
     </div>

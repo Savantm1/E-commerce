@@ -1,0 +1,18 @@
+.category_menu {
+   
+   &__list {
+        margin-top: 16px;
+    }
+
+    &__item {
+        margin-bottom: 12px;
+    }
+
+    &__link {
+        color: #6A983C;
+        font-size: 14px;
+        font-weight: 40;
+        text-decoration: underline;
+    }
+}
+

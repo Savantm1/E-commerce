@@ -1,0 +1,34 @@
+.blog_mid_item {
+    width: 270px;
+    border-radius: 12px;
+
+    &__info_blog {
+
+        color:#fff;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding: 20px 0px;
+        
+        .autor_block {
+            display: flex;
+            align-items: center;
+            
+            &__avatar {
+                border-radius: 50%;
+                overflow:hidden;
+                margin-right: 10px;
+                width: 32px;
+                height: 32px;
+            }
+
+            &__autor_name {
+                margin-right: 20px;
+            }
+        }
+
+    }
+
+}
