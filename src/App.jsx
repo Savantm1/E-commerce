@@ -4,6 +4,7 @@ import Footer from "./components/Footer/Footer"
 import CategorySectionRow from "./components/CategorySectionRow/CategorySectionRow"
 import CategorySectionRowProducts from "./components/CategorySectionRowProducts/CategorySectionRowProducts"
 import BlogSection from "./components/BlogSection/BlogSection"
+import FeedbackSection from "./components/FeedbackSection/FeedbackSection"
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <CategorySectionRow categoryName="Recipes"/>
         <CategorySectionRowProducts categoryName="Best selling products"/>
         <CategorySectionRowProducts categoryName="Best from Farmers"/>
+        <FeedbackSection/>
         <BlogSection/>
       </div>
       <Footer />
