@@ -2,7 +2,7 @@ import React from "react";
 import { Breadcrumbs, Link } from "@material-ui/core";
 import "./BreadcrumbsContainer.scss";
 
-const BreadcrumbsContainer = () => {
+const BreadcrumbsContainer = (props) => {
   return (
     <div className="breadcrumbs__container">
       <Breadcrumbs aria-label="breadcrumb">

@@ -1,0 +1,12 @@
+.category_page {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        max-width: 870px;
+        width: 100%;
+    }
+}

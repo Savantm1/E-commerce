@@ -1,0 +1,60 @@
+@import '../../variables.module';
+
+.pagination_section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 32px 0px;
+
+    .pagination_block  {
+        display: flex;
+        align-items: center;
+
+        .pagination_list  {
+            display: flex;
+
+            .pagination_item {
+                margin-left: 8px;
+                min-width: 20px;
+                text-align: center;
+                transition: all ease .1s;
+                height: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+
+                &:hover {
+                    color:$green;
+                    cursor:pointer;
+                    border-radius: 50%;
+                    background-color: $green_light;
+
+                }
+                &--active {
+                    color:$green; 
+                }
+            }
+        }
+    }
+
+    .pagination_block p {
+        color: darkgray;
+    }
+
+    .products_block {
+        display: flex;
+        color: darkgrey;
+        align-items: center;
+
+        &__count {
+            border-radius: 25%;
+            background-color: $green_light;
+            color: $green_hover;
+            padding: 5px 10px;
+            font-weight: 600;
+            margin-right: 12px;
+        }
+    }
+}

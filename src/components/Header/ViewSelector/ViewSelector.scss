@@ -1,0 +1,72 @@
+@import "../../../variables.module";
+
+.view_selector {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 40px;
+    align-items: center;
+    color: darkgrey;
+    
+
+    #grid, #inline {
+        display: none;
+    }
+
+    .grid, .inline {
+        padding-left: 20px;
+        margin-right: 20px;
+        position: relative;
+        cursor: pointer;
+        transition: all ease .3s;
+        
+        &:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top:0;
+                width: 16px;
+                height: 16px;
+                filter:grayscale(1);
+            }
+    }
+
+    .grid:before {
+        background: url('./../../../assets/icons/ic-layout-square-grid.svg');
+        background-size: contain;
+    }
+
+    .inline:before {
+        background: url('./../../../assets/icons/ic-layout-sections.svg');
+        background-size: contain;
+    }
+
+    input[type='radio']:checked + label:before {
+        filter:grayscale(0);
+    }
+
+    input[type='radio']:checked + label {
+        color: black;
+    }
+
+}
+
+.products_block {
+    display: flex;
+    color: darkgrey;
+    align-items: center;
+
+    &__count {
+        border-radius: 25%;
+        background-color: $green_light;
+        color: $green_hover;
+        padding: 5px 10px;
+        font-weight: 600;
+        margin-right: 12px;
+    }
+}
