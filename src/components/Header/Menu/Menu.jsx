@@ -16,7 +16,6 @@ const menuItemsData = [
 const MenuItems = menuItemsData.map((element, index) => {
   return (
     <MenuItem title={element} key={index} />
-    // <p key={index}>{element}</p>
   );
 });
 

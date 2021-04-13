@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Title from "../Title/Title";
 import CategoriesItem from "./CategoriesItem/CategoriesItem";
@@ -12,11 +13,13 @@ const categoryData = [
 
 const categoryItems = categoryData.map((element, index) => {
   return (
-    <CategoriesItem
-      key={index}
-      itemName={element.itemName}
-      count={element.count}
-    />
+    <Link to="/category" style={{width:"100%"}}>
+      <CategoriesItem
+        key={index}
+        itemName={element.itemName}
+        count={element.count}
+      />
+    </Link>
   );
 });
 

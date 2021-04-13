@@ -1,4 +1,5 @@
 import React from "react";
+
 import BlogSection from "../../components/BlogSection/BlogSection";
 import CategorySectionRow from "../../components/CategorySectionRow/CategorySectionRow";
 import CategorySectionRowProducts from "../../components/CategorySectionRowProducts/CategorySectionRowProducts";

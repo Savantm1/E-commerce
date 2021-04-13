@@ -5,6 +5,7 @@ const StyledItemCheckbox = styled.input.attrs({ type: 'checkbox' })`
         width:1px;
         position:absolute;
         left:0;
+        cursor:pointer;
     &::before {
         box-sizing:border-box;
         content: "";
@@ -14,15 +15,18 @@ const StyledItemCheckbox = styled.input.attrs({ type: 'checkbox' })`
         left: -1px;
         top: -5px;
         border-radius: 3px;
+        background:white;
         border: 2px solid #D1D1D1;
     }
 
     &:checked {
         &::before {
+            cursor:pointer;
             border-color: #46760A;
             background-color: #6A983C;
         }
         &::after {
+            cursor:pointer;
             box-sizing:border-box;
             content: "✓";
             color:white;

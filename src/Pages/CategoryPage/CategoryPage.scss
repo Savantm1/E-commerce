@@ -8,5 +8,13 @@
         flex-direction: column;
         max-width: 870px;
         width: 100%;
+
+        .category_grid {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
     }
+    
+
 }

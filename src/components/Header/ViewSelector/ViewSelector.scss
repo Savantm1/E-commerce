@@ -7,7 +7,6 @@
     padding: 20px 40px;
     align-items: center;
     color: darkgrey;
-    
 
     #grid, #inline {
         display: none;
@@ -46,11 +45,11 @@
         background-size: contain;
     }
 
-    input[type='radio']:checked + label:before {
+     input[type='radio']:checked + label:before {
         filter:grayscale(0);
     }
 
-    input[type='radio']:checked + label {
+     input[type='radio']:checked + label {
         color: black;
     }
 
@@ -69,4 +68,16 @@
         font-weight: 600;
         margin-right: 12px;
     }
+}
+
+.veiwselector_block {
+    position: relative;
+}
+
+.checkbox-shadow {
+    width: 90px;
+    height: 20px;
+    border: 1px solid rgb(255, 0, 0);
+    position: absolute;
+    top: -4px
 }
