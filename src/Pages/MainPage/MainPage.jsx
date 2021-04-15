@@ -8,7 +8,7 @@ import "./MainPage.scss"
 
 const MainPage = (props) => {
   return (
-    <div class="mainpage"> 
+    <div className="mainpage"> 
       <CategorySectionRow categoryName="Recipes" />
       <CategorySectionRowProducts categoryName="Best selling products" />
       <CategorySectionRowProducts categoryName="Best from Farmers" />

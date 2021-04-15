@@ -1,0 +1,43 @@
+@import "../../../variables.module";
+
+.subscribe {
+    max-width: 270px;
+    
+    &_description {
+        color: $black_active;
+        line-height: 20px;
+    }
+    
+    &__input_block {
+        background: $grey;
+        padding: 12px 16px 12px 21px;
+        border: 2px solid $border;
+        border-radius: 12px;
+        display: flex;
+        margin-top: 24px;
+    }
+
+    &__input {
+        border:none;
+        outline:none;
+        background-color: initial;
+        max-width: 150px;
+        &::placeholder {
+            color: $black_active;
+        }
+    }
+
+    .subscribe_btn {
+        border:none;
+        font-size: 15px;
+        line-height: 22px;
+        font-weight: 700;
+        cursor:pointer;
+        transition: all ease .3s;
+        outline: none;
+        
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}

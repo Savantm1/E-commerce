@@ -6,11 +6,15 @@ import MainPage from "./Pages/MainPage/MainPage";
 import CategoryPage from "./Pages/CategoryPage/CategoryPage";
 import { useState } from "react";
 import ProductPage from "./Pages/ProductPage/ProductPage";
+import { useSelector } from "react-redux";
+import { API } from "./api/api";
+import BlogPage from "./Pages/BlogPage/BlogPage";
+import BlogItemPage from "./Pages/BlogItemPage/BlogItemPage";
 
-function App() {
-
+function App(props) {
+  const lev = useSelector(state => state.test.menuData)
+  console.log(lev)
   const [view,setView] = useState(true);
-
   const changeView = () =>{
     setView( !view )
   } 
@@ -19,10 +23,13 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Header  changeView = {changeView} />
+        {/* <button onClick={API.getMainPageData}>aaaaa</button> */}
         <div className="body__container">
           <Route path="/" exact render={() => <MainPage />} />
           <Route path="/category"  render={() => <CategoryPage view = {view}  />} />                 
-          <Route path="/product"  render={() => <ProductPage/>} />                 
+          <Route path="/product"  render={() => <ProductPage/>} />  
+          <Route path="/blog" render={()=> <BlogPage/>} />              
+          <Route path="/blog_item" render={()=> <BlogItemPage/>} />              
         </div>
         <Footer />
       </div>

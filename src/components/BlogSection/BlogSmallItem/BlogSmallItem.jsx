@@ -7,7 +7,7 @@ const BlogSmallItem = (props) => {
             <div className="blog_small_item__info_blog">
                 <Title>Space for your heading is here, write what you need</Title>
                 <div className="autor_block">
-                    <span className="autor_block__autor_name">Autor</span>
+                    <span className="autor_block__autor_name">Author</span>
                     <span className="autor_block__data">17.92.22</span>
                 </div>
             </div>

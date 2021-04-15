@@ -9,14 +9,16 @@
 
 
 .tag_block__green {
-    background: $green;
+    background: #F4F8EC;
     border-radius: 12px;
-    margin: 10px;
+    color:$green;
+    margin: 8px;
     display: inline;
 }
 
 .tag_text {
     font-weight: 600;
     font-size: 14px;
-    padding: 10px;
+    line-height: 20px;
+    padding: 0px 8px;
 }

@@ -5,7 +5,7 @@ import Title from "../../Filters/Title/Title";
 const BlogBigItem = (props) => {
   return (
     <>
-      <div className="blog_big_item">
+      <div className={ `${props.large}` ? "blog_large_item" : "blog_big_item"} >
         <img src={props.bgImg} alt="#" className="blog_big_item__bg" />
         <div className="blog_big_item__info_blog">
           <Title color="#fff" fontSize="22px">
@@ -13,7 +13,7 @@ const BlogBigItem = (props) => {
           </Title>
           <div className="autor_block">
             <img src={props.avatar} alt="avatar" className="autor_block__avatar"/>
-            <span className="autor_block__autor_name">Autor</span>
+            <span className="autor_block__autor_name">Author</span>
             <span className="autor_block__data">17.92.22</span>
           </div>
         </div>

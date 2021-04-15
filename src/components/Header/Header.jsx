@@ -14,28 +14,44 @@ const Header = (props) => {
   return (
     <>
       <header className={styles.header__container}>
-          <Navigation /> 
-          <div className={styles.middle_row}>
-            <Logo/>
-            <SearchBlock/>
-            <div className={styles.person_block}>
-              <Login/>
-              <Basket/>
-            </div>
-          </div>   
-          <Menu/>
-          <Route path="/category">
-            <h1 className={styles.category_page__title}>Fruit and vegetables</h1> 
-            <div className={styles.breadcrumb_view_selector}>
-              <BreadcrumbsContainer/>
-              <ViewSelector changeView = {props.changeView}/>
-            </div>
-          </Route>
-          <Route path="/product">
+        <Navigation />
+
+        <div className={styles.middle_row}>
+          <Logo />
+          <SearchBlock />
+          <div className={styles.person_block}>
+            <Login />
+            <Basket />
+          </div>
+        </div>
+
+        <Menu />
+
+        <Route path="/category">
+          <h1 className={styles.category_page__title}>Fruit and vegetables</h1>
           <div className={styles.breadcrumb_view_selector}>
-              <BreadcrumbsContainer/>
-            </div>
-          </Route>
+            <BreadcrumbsContainer />
+            <ViewSelector changeView={props.changeView} />
+          </div>
+        </Route>
+
+        <Route path="/product">
+          <div className={styles.breadcrumb_view_selector}>
+            <BreadcrumbsContainer />
+          </div>
+        </Route>
+
+        <Route path="/blog">
+          <div className={styles.breadcrumb_view_selector}>
+            <BreadcrumbsContainer />
+          </div>
+          <h1 className={styles.category_page__title}>Fruit and vegetables</h1>
+        </Route>
+        <Route path="/blog_item">
+          <div className={styles.breadcrumb_view_selector}>
+            <BreadcrumbsContainer />
+          </div>
+        </Route>
       </header>
     </>
   );

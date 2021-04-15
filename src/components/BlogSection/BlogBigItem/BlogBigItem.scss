@@ -5,6 +5,10 @@
     border-radius: 12px;
     overflow: hidden;
 
+    &__bg {
+        width: 100%;
+    }
+
     &__info_blog {
 
         position: absolute;
@@ -35,5 +39,14 @@
         }
 
     }
+
+}
+
+.blog_large_item {
+    position: relative;
+    width: 570px;
+    height: 400px;
+    border-radius: 12px;
+    overflow: hidden;
 
 }
