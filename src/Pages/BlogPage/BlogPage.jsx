@@ -15,7 +15,7 @@ const BlogPage = (props) => {
             <div className="blog_page">
                 <div className="blog_page__main_row">
                     <BlogBigItem large="true" bgImg={bigItemImg} avatar={avatar}/>
-                    <BlogBigItem bgImg={bigItemImg} avatar={avatar}/>     
+                    <BlogBigItem large="true" bgImg={bigItemImg} avatar={avatar}/>     
                 </div>
                 <div className="blog_page__section">
                     <aside>

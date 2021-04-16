@@ -2,10 +2,12 @@ import React from "react";
 import Title from "../../Filters/Title/Title";
 import "./BlogItemLarge.scss";
 import image from "./../../../assets/img/Large.png";
+import { Link } from "react-router-dom";
 
 const BlogItemLarge = (props) => {
   return (
     <>
+    <Link to="/blog_item">
       <div className="blog_item_large">
         <img src={image} alt="" className="blog_item_large__img" />
         <div className="blog_item_large__info_blog">
@@ -31,6 +33,7 @@ const BlogItemLarge = (props) => {
           </Title>
         </div>
       </div>
+    </Link>
     </>
   );
 };

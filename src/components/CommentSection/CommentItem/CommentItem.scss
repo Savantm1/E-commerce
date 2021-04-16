@@ -3,6 +3,15 @@
     border: 1px solid $border;
     border-radius: 12px;
     padding: 10px;
+    margin-bottom: 20px;
+    width: 500px;
+
+    &:nth-child(even) {
+        width: 100%;
+    }
+    &:nth-child(odd) {
+        margin-left: auto;
+    }
 }
 .autor_block {
     display: flex;

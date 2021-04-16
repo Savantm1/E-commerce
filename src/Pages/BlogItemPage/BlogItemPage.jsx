@@ -7,6 +7,7 @@ import facebook from "./../../assets/icons/free-icon-facebook-1384005.svg";
 import arrow_back from "./../../assets/icons/ic-directions-left.svg";
 import CommentSection from "../../components/CommentSection/CommentSection";
 
+
 const BlogItemPage = (props) => {
   return (
     <>
@@ -76,7 +77,6 @@ const BlogItemPage = (props) => {
           </div>
           <CommentSection/>
         </div>
-      
       </div>
     </>
   );

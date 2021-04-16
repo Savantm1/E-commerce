@@ -4,8 +4,9 @@ import styled from 'styled-components'
 const StyledItemCheckbox = styled.input.attrs({ type: 'checkbox' })`
         width:1px;
         position:absolute;
-        left:0;
+        left:${(props)=> props.left || '0px'};
         cursor:pointer;
+        
     &::before {
         box-sizing:border-box;
         content: "";

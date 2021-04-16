@@ -1,8 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Title from '../../Filters/Title/Title'
 import "./BlogSmallItem.scss"
 const BlogSmallItem = (props) => {
     return (
+        <Link to="/blog_item">
         <div className="blog_small_item">
             <div className="blog_small_item__info_blog">
                 <Title>Space for your heading is here, write what you need</Title>
@@ -15,6 +17,7 @@ const BlogSmallItem = (props) => {
                 <img src={props.postImg} alt="#" className="blog_small_item__bg" />
             </div>
         </div>
+        </Link>
     )
 }
 
