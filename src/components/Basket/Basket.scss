@@ -1,0 +1,108 @@
+@import "./../../variables.module";
+
+.shopping_cart {
+    
+    z-index: 100;
+    position: absolute;
+    right: calc(50% + (-580px));
+    top:150px;
+    border-radius: 12px;
+    border: 1px solid $border;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    box-sizing:border-box;
+    width: 400px;
+    min-height: 720px;
+    max-height: 70vh;
+    overflow: scroll;
+
+    &::-webkit-scrollbar {
+        width: 0;
+      }
+      
+
+    &__header_block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        position: sticky;
+        top: 0;
+        background-color: white;
+        border-bottom: 1px solid $border;
+        z-index: 110;
+        padding: 0 16px;
+        margin-bottom: 10px;
+
+        .shopping_cart__close {
+            display: flex;
+            align-items: center;
+            color: $black_active;
+
+            span {
+                color: black;
+                margin-left: 10px;
+                font-size: 35px;
+            }
+        }
+    }
+
+
+    .total_price {
+        background-color: white;
+        width: 100%;
+        position:sticky;
+        padding-bottom: 10px;
+        border-top: 1px solid $border;
+        bottom: 0;
+        left:0;
+        right: 0;
+        padding: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+         span {
+
+            font-weight: 600;
+        
+        }
+         p {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 27px;
+            text-transform: uppercase;
+            // margin-top: 20px;
+        }
+
+        .continue_shopping {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-top: 10px;
+
+            span {
+                cursor:pointer;
+            }
+        }
+
+    }
+}
+
+.shopping_cart_container {
+    padding: 0 16px;
+    background-color: white;
+    width: 100%;
+}
+
+.basket_cover {
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    background-color:rgba($color: rgb(105, 102, 102), $alpha: 0.2)
+}

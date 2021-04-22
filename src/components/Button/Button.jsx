@@ -6,6 +6,7 @@ const StyledButton = styled.button`
   cursor: pointer;
   min-width: 100px;
   padding: 12px 16px;
+  width: ${(props) => props.width || "auto"};
   font-weight: 700;
   border-radius: 12px;
   border: ${(props) => props.border || "2px solid #46760A"};

@@ -1,6 +1,8 @@
 import React from "react";
+import { useState } from "react";
 import { Route } from "react-router";
-import Basket from "./Basket/Basket";
+import Basket from "../Basket/Basket";
+import BasketLogo from "./BasketLogo/BasketLogo";
 import BreadcrumbsContainer from "./BreadcrumbsContainer/BreadcrumbsContainer";
 import styles from "./Header.module.scss";
 import Login from "./Login/Login";
@@ -11,6 +13,14 @@ import SearchBlock from "./SearchBlock/SearchBlock";
 import ViewSelector from "./ViewSelector/ViewSelector";
 
 const Header = (props) => {
+
+  let [basketToggler,changeBasketToggler] = useState(false);
+
+  const BasketHandler = (evt) => {
+    evt.preventDefault();
+    changeBasketToggler(!basketToggler)
+  }
+
   return (
     <>
       <header className={styles.header__container}>
@@ -21,8 +31,9 @@ const Header = (props) => {
           <SearchBlock />
           <div className={styles.person_block}>
             <Login />
-            <Basket />
+            <BasketLogo BasketHandler={BasketHandler} />
           </div>
+          {basketToggler? <Basket BasketHandler={BasketHandler}/> : null}
         </div>
 
         <Menu />

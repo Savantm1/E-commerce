@@ -1,14 +1,14 @@
 import React from "react";
 import basket from "./../../../assets/icons/ic-ecommerce-basket.svg";
-import styles from "./Basket.module.scss";
+import styles from "./BasketLogo.module.scss";
 
-const Basket = (props) => {
+const BasketLogo = (props) => {
   return (
-    <div className={styles.basket_block}>
+    <div className={styles.basket_block} onClick={props.BasketHandler}>
       <img className={styles.basket} src={basket} alt="basket" />
       <span className={styles.counter}>5</span>
     </div>
   );
 };
 
-export default Basket;
+export default BasketLogo;

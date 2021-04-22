@@ -6,6 +6,10 @@ import twitter from "./../../assets/icons/free-icon-twitter-733635.svg";
 import facebook from "./../../assets/icons/free-icon-facebook-1384005.svg";
 import arrow_back from "./../../assets/icons/ic-directions-left.svg";
 import CommentSection from "../../components/CommentSection/CommentSection";
+import BlogMidItem from "../../components/BlogSection/BlogMidItem/BlogMidItem";
+import Title from "../../components/Filters/Title/Title";
+import postImg from "../../assets/img/Rectangle 26-2 s.png";
+
 
 
 const BlogItemPage = (props) => {
@@ -78,6 +82,13 @@ const BlogItemPage = (props) => {
           <CommentSection/>
         </div>
       </div>
+      <section className="releated_section">
+          <Title width="100%"> Releated topics</Title>
+          < BlogMidItem postImg={postImg}/>
+          < BlogMidItem postImg={postImg}/>
+          < BlogMidItem postImg={postImg}/>
+          < BlogMidItem postImg={postImg}/>
+        </section>
     </>
   );
 };

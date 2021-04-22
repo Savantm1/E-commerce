@@ -1,9 +1,8 @@
 import React from "react";
-
 import BlogSection from "../../components/BlogSection/BlogSection";
 import CategorySectionRow from "../../components/CategorySectionRow/CategorySectionRow";
 import CategorySectionRowProducts from "../../components/CategorySectionRowProducts/CategorySectionRowProducts";
-import FeedbackSection from "../../components/FeedbackSection/FeedbackSection";
+import FeedbackSectionContainer from "../../components/FeedbackSection/FeedbackSectionContainer";
 import "./MainPage.scss"
 
 const MainPage = (props) => {
@@ -12,7 +11,7 @@ const MainPage = (props) => {
       <CategorySectionRow categoryName="Recipes" />
       <CategorySectionRowProducts categoryName="Best selling products" />
       <CategorySectionRowProducts categoryName="Best from Farmers" />
-      <FeedbackSection />
+      <FeedbackSectionContainer />
       <BlogSection />
     </div>
   );

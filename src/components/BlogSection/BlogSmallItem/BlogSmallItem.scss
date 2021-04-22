@@ -28,10 +28,10 @@
         }
     }
 
-    // .blog_small_item__block_img {
-    //     width: 96px;
-    //     height: 96px;
-    //     border-radius: 12px;
-    //     overflow: hidden;
-    // }
+    .blog_small_item__block_img {
+        min-width: 96px;
+        height: 96px;
+        border-radius: 12px;
+        overflow: hidden;
+    }
 }

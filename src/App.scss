@@ -24,6 +24,10 @@
   font-weight: 700;
 }
 
+img {
+  width :100%;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -51,6 +55,7 @@ a {
   background-image: url('./assets/img/background.jpg');
   min-height: 100vh;
   margin:0 auto;
+  position: relative;
 }
 
 

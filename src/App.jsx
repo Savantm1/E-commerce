@@ -12,8 +12,6 @@ import BlogPage from "./Pages/BlogPage/BlogPage";
 import BlogItemPage from "./Pages/BlogItemPage/BlogItemPage";
 
 function App(props) {
-  const lev = useSelector(state => state.test.menuData)
-  console.log(lev)
   const [view,setView] = useState(true);
   const changeView = () =>{
     setView( !view )
@@ -23,7 +21,6 @@ function App(props) {
     <BrowserRouter>
       <div className="App">
         <Header  changeView = {changeView} />
-        {/* <button onClick={API.getMainPageData}>aaaaa</button> */}
         <div className="body__container">
           <Route path="/" exact render={() => <MainPage />} />
           <Route path="/category"  render={() => <CategoryPage view = {view}  />} />                 

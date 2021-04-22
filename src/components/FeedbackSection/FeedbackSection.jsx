@@ -6,8 +6,8 @@ import arrow_l from "../../assets/icons/ic-chevron-left.svg";
 import arrow_r from "../../assets/icons/ic-chevron-right.svg";
 
 const FeedbackSection = (props) => {
+
   const $feedbackList = React.createRef();
-  const $feedbackItem = React.createRef();
   const $arrowLeft = React.createRef();
   const $arrowRight = React.createRef();
 
@@ -42,6 +42,18 @@ const FeedbackSection = (props) => {
     }
   };
 
+  const feedbackItems = props.feedback.map((element,index)=>{
+    return(
+      <FeedbackItem 
+        key = {index}
+        name = {element.name}
+        surname = {element.surname}
+        message = {element.message}
+        avatar = {element.avatar}
+        />
+    )
+  })
+
   return (
     <div className="feedback_section">
       <Title>Our customers says</Title>
@@ -65,12 +77,7 @@ const FeedbackSection = (props) => {
           </div>
         </div>
         <div className="slider_containter" ref={$feedbackList}>
-          <FeedbackItem ref={$feedbackItem} />
-          <FeedbackItem />
-          <FeedbackItem />
-          <FeedbackItem />
-          <FeedbackItem />
-          <FeedbackItem />
+          {feedbackItems}
         </div>
       </div>
     </div>

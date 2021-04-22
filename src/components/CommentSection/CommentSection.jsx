@@ -39,13 +39,6 @@ const CommentSection = (props) => {
             <CommentItem/>
         </div>
       </section>
-      <section className="releated_section">
-          <Title width="100%"> Releated topics</Title>
-          < BlogMidItem/>
-          < BlogMidItem/>
-          < BlogMidItem/>
-          < BlogMidItem/>
-        </section>
     </>
   );
 };

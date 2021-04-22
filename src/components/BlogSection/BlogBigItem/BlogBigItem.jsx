@@ -4,7 +4,6 @@ import Title from "../../Filters/Title/Title";
 import { Link } from "react-router-dom";
 
 const BlogBigItem = (props) => {
-  debugger
   return (
     <>
       <Link to="/blog_item">
