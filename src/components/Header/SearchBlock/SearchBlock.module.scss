@@ -2,13 +2,15 @@
 
 .block {
   height: 42px;
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
   background-color: $grey;
   border: 1px solid $border;
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5px 16px;
+  padding: 0.5rem 1rem;
+  margin: 0 1rem;
   box-sizing: border-box;
 }

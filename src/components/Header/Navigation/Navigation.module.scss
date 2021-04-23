@@ -9,11 +9,11 @@
 .info_list{
   display: flex;
   justify-content: flex-start;
-  padding: 20px;
+  padding: 1.5rem;
   width: 100%;
 
   &__item {
-    margin-right: 20px;
+    margin-right: 1.5rem;
   }
   
   &__link {

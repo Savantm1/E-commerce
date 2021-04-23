@@ -6,6 +6,7 @@ import FeedbackSectionContainer from "../../components/FeedbackSection/FeedbackS
 import "./MainPage.scss"
 
 const MainPage = (props) => {
+  
   return (
     <div className="mainpage"> 
       <CategorySectionRow categoryName="Recipes" />

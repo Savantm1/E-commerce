@@ -27,7 +27,7 @@ const StyledCategory = styled.ul`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 48px;
+  margin-bottom: 3rem;
 `;
 
 const Category = (props = categoryData) => {

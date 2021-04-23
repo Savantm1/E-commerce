@@ -1,5 +1,6 @@
 import React from "react";
 import CategoryMenu from "../Filters/CategoryMenu/CategoryMenu";
+import Title from "../Filters/Title/Title";
 import ProductItem from "../ProductItem/ProductItem";
 
 const CategorySectionRowProducts = (props) => {
@@ -11,6 +12,7 @@ const CategorySectionRowProducts = (props) => {
           categoryName={props.categoryName}
         />
         <div className="recipes_container">
+          <Title >{props.categoryName}</Title>
           <ProductItem />
           <ProductItem />
           <ProductItem />

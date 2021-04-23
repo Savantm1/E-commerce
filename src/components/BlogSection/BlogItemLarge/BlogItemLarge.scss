@@ -13,7 +13,7 @@
         display: flex;
         align-items: flex-end;
         justify-content: center;
-        padding-bottom: 32px;
+        padding-bottom: 2rem;
         position: absolute;
         background: linear-gradient(to bottom,transparent,#000);
         bottom:0;
@@ -25,15 +25,16 @@
     &__info_list {
         display: flex;
         flex-direction: column;
-        margin-right: 32px;
+        margin-right: 2rem;
     }
 
     &__list_item {
         color: $black_active;
         display: flex;
         justify-content: space-between;
-        width: 150px;
-        margin-bottom: 12px ;
+        max-width: 150px;
+        width: 100%;
+        margin-bottom: 1rem ;
 
         &__value {
             color: white;

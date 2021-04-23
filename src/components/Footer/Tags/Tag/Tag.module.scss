@@ -3,7 +3,7 @@
 .tag_block {
     background: $grey;
     border-radius: 12px;
-    margin: 10px;
+    margin: 1rem;
     display: inline;
 }
 
@@ -12,13 +12,13 @@
     background: #F4F8EC;
     border-radius: 12px;
     color:$green;
-    margin: 8px;
+    margin: 0.5rem;
     display: inline;
 }
 
 .tag_text {
     font-weight: 600;
-    font-size: 14px;
+    font-size: 1rem;
     line-height: 20px;
-    padding: 0px 8px;
+    padding: 0px 0.5rem;
 }

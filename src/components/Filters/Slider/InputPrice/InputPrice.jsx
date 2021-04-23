@@ -4,12 +4,13 @@ import styled from 'styled-components'
 
 const StyledInputPrice = styled.input.attrs({ type: 'text' })`
     position: relative;
-    width: 100px;
+    max-width: 100px;
+    width: 100%;
     border: 1px solid rgba(209, 209, 209, 1);;
     border-radius: 12px;
     outline: none;
-    font-size: 14px;
-    padding: 11px 16px 12px 22px;
+    font-size: 1rem;
+    padding: 0.5rem 1rem 1rem 1.5rem;
     background: #F9F9F9;
     color: #A9A9A9;
     &:focus {

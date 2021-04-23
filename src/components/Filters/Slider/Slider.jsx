@@ -7,7 +7,8 @@ import Button from "../../Button/Button";
 import "./Slider.scss";
 
 const StyledSlider = styled.div`
-  width: 250px;
+  max-width: 250px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

@@ -10,6 +10,7 @@ import { useSelector } from "react-redux";
 import { API } from "./api/api";
 import BlogPage from "./Pages/BlogPage/BlogPage";
 import BlogItemPage from "./Pages/BlogItemPage/BlogItemPage";
+import './responsive.scss';
 
 function App(props) {
   const [view,setView] = useState(true);
@@ -19,7 +20,7 @@ function App(props) {
 
   return (
     <BrowserRouter>
-      <div className="App">
+      <div className="app">
         <Header  changeView = {changeView} />
         <div className="body__container">
           <Route path="/" exact render={() => <MainPage />} />

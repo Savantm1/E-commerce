@@ -1,0 +1,118 @@
+@media screen and (max-width: 1260px) {
+    html {
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width: 1050px) {
+
+    .product_item__price {
+        font-size:1.3rem;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    html {
+        font-size:12px;
+    }
+    .mainpage {
+        margin: 0;
+
+        .product_item{
+            margin-bottom: 0;
+
+            &__subtitle {
+                font-size:1rem;
+            }
+        }
+
+        .category_section_row {
+            margin-bottom: 0;
+        }
+
+        .recipes_container {
+            flex-wrap: wrap;
+            width: 100%;
+    
+            h3:nth-child(1){
+                font-size: 2rem;
+                display: block;
+                width: 100%;
+                margin: 2rem 0px;
+                text-align: center;
+               }
+        }
+    
+        .category_menu {
+            display: none;
+        }
+
+
+
+
+        .feedback_section {
+
+            .slider_window {
+                overflow: unset;
+                height: auto;
+            }
+
+            h3 {
+                font-size: 2rem;
+                width: 100%;
+                text-align: center;
+                margin-top: 2rem;
+            }
+
+            .slider_containter{
+                width: 100%;
+                flex-wrap: wrap;
+                position: relative;
+                justify-content: space-around;
+                padding: 0 3rem;
+            }
+
+            .slider_arrow__block_right,
+            .slider_arrow__block_left {
+                display: none;
+            }
+            
+
+            .feedback_item {
+                max-width: 30%;
+                height: auto;
+                margin-bottom: 3rem;
+
+                &__text {
+                    font-size:1rem;
+                }
+
+                &__author {
+                    margin-top: 1rem;
+                }
+
+            }
+
+
+        }
+
+        .blog_section__content_block>a:first-child {
+            display: none;
+        }
+
+
+    }
+
+    .category_page {
+        aside {
+            display: none;
+        }
+    }
+
+   
+
+
+}

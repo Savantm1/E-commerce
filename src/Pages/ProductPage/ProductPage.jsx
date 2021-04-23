@@ -4,6 +4,7 @@ import Button from "../../components/Button/Button";
 import Title from "../../components/Filters/Title/Title";
 import ProductItem from "../../components/ProductItem/ProductItem";
 import styles from "./ProductPage.module.scss";
+import image from './../../assets/img/Rectangle 26-1s3.png';
 
 const ProductPage = (props) => {
   let data = [
@@ -53,13 +54,13 @@ const ProductPage = (props) => {
       <div className={styles.product_page}>
         <div className={styles.images_block}>
           <div className={styles.image_item_container}>
-            <img src="" alt="" />
+            <img src={image} alt="" />
           </div>
           <div className={styles.image_item_container}>
-            <img src="" alt="" />
+            <img src={image} alt="" />
           </div>
           <div className={styles.image_item_container}>
-            <img src="" alt="" />
+            <img src={image} alt="" />
           </div>
         </div>
         <div className={styles.description_block}>

@@ -10,7 +10,7 @@ const BlogBigItem = (props) => {
         <div className={`${props.large}`==="true" ? "blog_large_item" : "blog_big_item"}>
           <img src={props.bgImg} alt="#" className="blog_big_item__bg" />
           <div className="blog_big_item__info_blog">
-            <Title color="#fff" fontSize="22px">
+            <Title color="#fff" fontSize="1.5rem">
               Our chef tips for a great and tasty dinner ready in 20 minutes
             </Title>
             <div className="autor_block">

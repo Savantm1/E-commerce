@@ -1,13 +1,11 @@
 .blog_small_item {
     display: flex;
     max-width: 370px;
-    margin-bottom: 38px;
-
+    // margin-bottom: 2rem;
 
     &__info_blog {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        margin-right: 24px;
+        margin-bottom: 1rem;
+        margin-right: 1.5rem;
     }
 
     .autor_block {
@@ -18,13 +16,13 @@
         &__avatar {
             border-radius: 50%;
             overflow:hidden;
-            margin-right: 10px;
+            margin-right: 1rem;
             width: 32px;
             height: 32px;
         }
 
         &__autor_name {
-            margin-right: 20px;
+            margin-right:1.5rem;
         }
     }
 

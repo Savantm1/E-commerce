@@ -22,9 +22,11 @@ const FeedbackSection = (props) => {
       currentPosition += step;
       $feedbackList.current.style.left = currentPosition + "px";
       $arrowRight.current.classList.remove("slider_arrow__default");
+      console.log('step',step, 'currentP',currentPosition, 'minLeft',minLeft)
     }
     if (currentPosition === minLeft) {
       $arrowLeft.current.classList.add("slider_arrow__default");
+      console.log('step',step, 'currentP',currentPosition, 'minLeft',minLeft)
     }
   };
 
@@ -36,9 +38,11 @@ const FeedbackSection = (props) => {
       currentPosition -= step;
       $feedbackList.current.style.left = currentPosition + "px";
       $arrowLeft.current.classList.remove("slider_arrow__default");
+      console.log('step',step, 'currentP',currentPosition, 'maxLeft',maxLeft)
     }
-    if (currentPosition === maxLeft) {
+    if (currentPosition <= maxLeft) {
       $arrowRight.current.classList.add("slider_arrow__default");
+      console.log('step',step, 'currentP',currentPosition, 'maxLeft',maxLeft)
     }
   };
 

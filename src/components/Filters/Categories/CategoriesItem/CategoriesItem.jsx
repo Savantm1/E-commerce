@@ -6,9 +6,9 @@ const StyledCategoriesItem = styled.li`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 400;
-  margin-bottom: 12px;
+  margin-bottom: 1rem;
   width: 100%;
 `;
 

@@ -12,7 +12,7 @@ const BlogMidItem = (props) => {
         </div>
         <div className="blog_mid_item__info_blog">
           <Tag name="Tag" green/>
-          <Title fontSize="22px">
+          <Title fontSize="1.5rem">
             Our chef tips for a great and tasty dinner ready in 20 minutes
           </Title>
           <div className="autor_block">

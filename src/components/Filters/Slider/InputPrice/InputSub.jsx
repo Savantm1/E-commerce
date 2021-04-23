@@ -3,8 +3,8 @@ import styled from 'styled-components'
 
 const StyledInputSub = styled.span`
     font-weight: 500;
-    margin-left:5px;
-    margin-top:5px;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
 `;
 
 const InputSub = (props) => {

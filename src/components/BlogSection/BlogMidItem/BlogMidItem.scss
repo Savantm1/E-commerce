@@ -10,7 +10,7 @@
         flex-direction: column;
         justify-content: flex-end;
         align-items: flex-start;
-        padding-bottom: 20px ;
+        padding-bottom: 1.5rem ;
         
         .autor_block {
             display: flex;
@@ -20,13 +20,13 @@
             &__avatar {
                 border-radius: 50%;
                 overflow:hidden;
-                margin-right: 10px;
+                margin-right: 1rem;
                 width: 32px;
                 height: 32px;
             }
 
             &__autor_name {
-                margin-right: 20px;
+                margin-right: 1.5rem;
             }
         }
 

@@ -47,7 +47,11 @@ a {
   color: $black; 
 }
 
-.App {
+html {
+  font-size:14px;
+}
+
+.app {
   display:flex;
   flex-direction: column;
   justify-content: space-between;
@@ -63,7 +67,7 @@ a {
   max-width: 1260px;
   background-color: #fff;
   width: 100%;
-  padding: 0 45px;
+  padding: 0 3rem;
 }
 
 .MuiSlider-root {

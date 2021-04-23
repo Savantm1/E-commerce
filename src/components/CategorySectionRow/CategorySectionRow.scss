@@ -2,11 +2,16 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 40px;
+    // margin: 0 -1rem;
+    margin-bottom: 2rem;
 }
 
 .recipes_container {
     display: flex;
     justify-content: space-between;
     width: 75%;
+
+    h3 {
+        display: none;
+    }
 }

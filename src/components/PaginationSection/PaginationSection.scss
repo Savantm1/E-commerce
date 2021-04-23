@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 32px 0px;
+    margin: 2rem 0px;
 
     .pagination_block  {
         display: flex;
@@ -15,7 +15,7 @@
             display: flex;
 
             .pagination_item {
-                margin-left: 8px;
+                margin-left: 0.5rem;
                 min-width: 20px;
                 text-align: center;
                 transition: all ease .1s;
@@ -52,9 +52,9 @@
             border-radius: 25%;
             background-color: $green_light;
             color: $green_hover;
-            padding: 5px 10px;
+            padding: 0.5rem 1rem;
             font-weight: 600;
-            margin-right: 12px;
+            margin-right: 1rem;
         }
     }
 }

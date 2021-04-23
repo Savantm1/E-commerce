@@ -7,7 +7,7 @@ import  "./ProductItem.scss";
 const ProductItem = (props) => {
     return (
         <>
-            <Link to="/product">
+            <Link className="product_link" to="/product">
                 <div className="product_item">
                     <div className="product_item__img_block">
                         {/* <img src="" alt="" className="product_item__img"/> */}

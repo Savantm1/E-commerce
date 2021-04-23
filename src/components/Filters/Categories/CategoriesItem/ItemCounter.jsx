@@ -7,8 +7,8 @@ const StyledItemCounter = styled.span`
     color: rgba(106, 152, 60, 1);
     font-weight: 600;
     line-height:18px;
-    font-size: 12px;
-    padding: 1px 8px;
+    font-size: 0.9rem;
+    padding: 0.5rem;
     border-radius:12px;
 `;
 
