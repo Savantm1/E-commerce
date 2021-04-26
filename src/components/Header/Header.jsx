@@ -8,6 +8,7 @@ import styles from "./Header.module.scss";
 import Login from "./Login/Login";
 import Logo from "./Logo/Logo";
 import Menu from "./Menu/Menu";
+import MobileMenu from "./MobileMenu/MobileMenu";
 import Navigation from "./Navigation/Navigation";
 import SearchBlock from "./SearchBlock/SearchBlock";
 import ViewSelector from "./ViewSelector/ViewSelector";
@@ -30,6 +31,7 @@ const Header = (props) => {
           <Logo />
           <SearchBlock />
           <div className={styles.person_block}>
+            <MobileMenu/>
             <Login />
             <BasketLogo BasketHandler={BasketHandler} />
           </div>

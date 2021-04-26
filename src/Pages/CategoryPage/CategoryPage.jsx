@@ -8,11 +8,12 @@ import "./CategoryPage.scss";
 const CategoryPage = (props) => {
   return (
     <>
-      <div class="category_page">
+      <div className="category_page">
         <Filters />
-        <div class="category_page__container">
+        <div className="category_page__container">
           {props.view ? (
             <div>
+              <ProductItemRow />
               <ProductItemRow />
               <ProductItemRow />
               <ProductItemRow />

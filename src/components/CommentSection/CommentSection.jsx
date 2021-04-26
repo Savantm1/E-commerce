@@ -1,5 +1,5 @@
 import React from "react";
-import BlogMidItem from "../BlogSection/BlogMidItem/BlogMidItem";
+// import BlogMidItem from "../BlogSection/BlogMidItem/BlogMidItem";
 import Button from "../Button/Button";
 import ItemCheckbox from "../Filters/Brands/BrandsItem/ItemCheckbox";
 import Title from "../Filters/Title/Title";

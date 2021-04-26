@@ -1,3 +1,7 @@
+.blog_big_item__link {
+    width: 100%;
+}
+
 .blog_big_item {
     position: relative;
     max-width: 470px;
@@ -44,9 +48,9 @@
 
 .blog_large_item {
     position: relative;
-    max-width: 570px;
+    // max-width: 570px;
     width: 100%;
-    height: 400px;
+    max-height: 400px;
     border-radius: 12px;
     overflow: hidden;
 

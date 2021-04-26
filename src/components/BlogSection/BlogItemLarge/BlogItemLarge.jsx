@@ -27,7 +27,7 @@ const BlogItemLarge = (props) => {
               <span className="blog_item_large__list_item__value">Admin</span>
             </li>
           </ul>
-          <Title fontSize="32px" width="520px" color="white">
+          <Title fontSize="2rem" width="520px" color="white">
             Space for your heading, can be larger so dont worry - large heading
             looks better
           </Title>

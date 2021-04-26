@@ -17,6 +17,7 @@ const BlogSection = (props) => {
                 <div className="blog_section__content_block">
                     <BlogBigItem  bgImg={bigItemImg} avatar={avatar} />
                     <BlogMidItem postImg={postImg}/>
+                    <BlogMidItem postImg={postImg}/>
                     <div className="blog_section__content_block__sm">    
                         <BlogSmallItem  postImg={smPostImg}/>
                         <BlogSmallItem postImg={smPostImg}/>

@@ -5,6 +5,7 @@ import Title from "../../components/Filters/Title/Title";
 import ProductItem from "../../components/ProductItem/ProductItem";
 import styles from "./ProductPage.module.scss";
 import image from './../../assets/img/Rectangle 26-1s3.png';
+import ImageCarousel from "../../components/ImageCarousel/ImageCarousel";
 
 const ProductPage = (props) => {
   let data = [
@@ -64,11 +65,12 @@ const ProductPage = (props) => {
           </div>
         </div>
         <div className={styles.description_block}>
-          <Title fontSize="32px">Carrots from Tomissy Farm</Title>
+          <Title fontSize="2rem">Carrots from Tomissy Farm</Title>
           <div className={styles.rating_block}>
             <Rating name="read-only" value={3} readOnly />
             <span className={styles.rating_span}>(1 customer review)</span>
           </div>
+            <ImageCarousel/>
           <p className={styles.description}>
             Carrots from Tomissy Farm are one of the best on the market. Tomisso
             and his family are giving a full love to his Bio products. Tomisso’s
@@ -176,7 +178,7 @@ const ProductPage = (props) => {
       </div>
       <section className={styles.related}>
         <div className ={styles.related_title_row}>
-            <Title>Related products</Title>
+            <Title margin="1rem 0">Related products</Title>
             <Button value="More products >" bg="white" border="none" cl="black"/>
         </div>
         <div className={styles.product_block}>

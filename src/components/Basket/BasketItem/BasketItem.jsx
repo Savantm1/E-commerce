@@ -1,6 +1,6 @@
 import { Rating } from '@material-ui/lab'
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import Title from '../../Filters/Title/Title'
 import "./BasketItem.scss";
 import close from "./../../../assets/icons/ic-actions-close-simple.svg";
@@ -87,7 +87,7 @@ const BasketItem = (props) => {
               Compare
             </p>
             <p className="remove">
-              <img class="remove_img" src={close} alt='close'/>
+              <img className="remove_img" src={close} alt='close'/>
               Remove
             </p>
             </div>

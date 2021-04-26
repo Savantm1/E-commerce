@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const BlogBigItem = (props) => {
   return (
     <>
-      <Link to="/blog_item">
+      <Link className="blog_big_item__link" to="/blog_item">
         <div className={`${props.large}`==="true" ? "blog_large_item" : "blog_big_item"}>
           <img src={props.bgImg} alt="#" className="blog_big_item__bg" />
           <div className="blog_big_item__info_blog">

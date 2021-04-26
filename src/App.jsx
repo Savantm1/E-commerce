@@ -6,8 +6,6 @@ import MainPage from "./Pages/MainPage/MainPage";
 import CategoryPage from "./Pages/CategoryPage/CategoryPage";
 import { useState } from "react";
 import ProductPage from "./Pages/ProductPage/ProductPage";
-import { useSelector } from "react-redux";
-import { API } from "./api/api";
 import BlogPage from "./Pages/BlogPage/BlogPage";
 import BlogItemPage from "./Pages/BlogItemPage/BlogItemPage";
 import './responsive.scss';

@@ -9,6 +9,7 @@ import CommentSection from "../../components/CommentSection/CommentSection";
 import BlogMidItem from "../../components/BlogSection/BlogMidItem/BlogMidItem";
 import Title from "../../components/Filters/Title/Title";
 import postImg from "../../assets/img/Rectangle 26-2 s.png";
+import { Link } from "react-router-dom";
 
 
 
@@ -18,10 +19,10 @@ const BlogItemPage = (props) => {
       <BlogItemLarge />
       <div className="blog_item_page">
         <aside className="back_block">
-          <a href="#" className="back" alt="back">
+          <Link href="/blog" className="back" alt="back">
             <img src={arrow_back} className="arrow_back" alt="back" />
             Back to Blog
-          </a>
+          </Link>
         </aside>
         <div className="blog_item_page__container">
           <p className="blog_item_page__text">

@@ -1,4 +1,5 @@
 import React from "react";
+import Navigation from "../Header/Navigation/Navigation";
 import styles from "./Footer.module.scss";
 import FooterNavList from "./FooterNavList/FooterNavList";
 import Tags from "./Tags/Tags";
@@ -55,6 +56,7 @@ const Footer = (props) => {
         <div className={styles.footer__container}>
           <section className={styles.navigation_lists}>{lists}</section>
           <Tags />
+          <Navigation/> 
         </div>
       </footer>
     </>

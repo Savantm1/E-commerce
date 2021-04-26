@@ -28,7 +28,7 @@ let tags = tagsArray.map((element, index) => {
 
 const Tags = (props) => {
   return (
-    <div>
+    <div className={styles.tags_block}>
       <p className={styles.title}>Product tags</p>
       <div className={styles.tags_row}>{tags}</div>
     </div>
