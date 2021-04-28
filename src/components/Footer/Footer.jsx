@@ -54,9 +54,15 @@ const Footer = (props) => {
     <>
       <footer className={styles.footer}>
         <div className={styles.footer__container}>
-          <section className={styles.navigation_lists}>{lists}</section>
-          <Tags />
-          <Navigation/> 
+          <div className={styles.navigation_lists__container}>
+            <section className={styles.navigation_lists}>{lists}</section>
+          </div>
+          <div className={styles.tags__container}>
+            <Tags />
+          </div>
+          <div className={styles.navigation_container}>
+            <Navigation/> 
+          </div>
         </div>
       </footer>
     </>

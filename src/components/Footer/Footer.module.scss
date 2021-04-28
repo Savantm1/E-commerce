@@ -1,3 +1,5 @@
+@import "./../../variables.module";
+
 .footer {
   background-color: #fff;
   padding-top: 1.5rem;
@@ -15,5 +17,38 @@
   .navigation_lists {
       display: flex;
       justify-content: space-between;
+  }
+
+  .navigation_container {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width:768px) {
+
+   .footer {
+     width: 100%;
+   }
+   
+  .tags__container,
+  .navigation_lists__container {
+    display: none;
+  }
+  
+  .navigation_container {
+    display: block !important;
+
+    div {
+      flex-direction: column;
+      text-align: center;
+      ul {
+        justify-content: space-between !important;
+
+        li {
+          width :150px;
+        }
+      }
+    }
   }
 }

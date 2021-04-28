@@ -24,3 +24,9 @@
         bottom:32px;
     }
 }
+
+@media screen and (max-width:768px) {
+    .recipe {
+        height: 200px;
+      }
+}

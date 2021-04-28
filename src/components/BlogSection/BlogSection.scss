@@ -26,3 +26,43 @@
         }
     }
 }
+
+@media screen and (max-width:1000px) {
+    
+    .blog_section__content_block > a:first-child {
+        display: none;
+      }
+}
+
+@media screen and (max-width:768px) {
+    .blog_section .blog_section__content_block .blog_mid_item:nth-child(2) {
+        display: block;
+      }
+
+    .blog_section__content_block__sm {
+        display: none;
+    }
+
+    .blog_section .blog_section__content_block__sm {
+        display: none;
+      }
+
+      .blog_section .blog_section__content_block .blog_mid_item:nth-child(2) {
+        display: block;
+      }
+    
+      .blog_section > h3 {
+        font-size: 2rem;
+        width: 100%;
+        text-align: center;
+        margin-top: 2rem;
+      }  
+
+    .blog_mid_item {
+        max-width: none;
+      }
+
+    .blog_mid_item__info_blog>div:first-child {
+        display: none;
+      }
+}

@@ -81,3 +81,20 @@
     position: absolute;
     top: -4px
 }
+
+@media screen and (max-width:1000px) {
+    .view_selector {
+        justify-content: flex-start;
+        padding-top: 0;
+      }
+}
+
+@media screen and (max-width:768px) {
+    .view_selector {
+        width: 60%;
+    
+        .veiwselector_block {
+          min-width: 100px;
+        }
+      }
+}

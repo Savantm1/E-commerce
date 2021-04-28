@@ -37,3 +37,21 @@
     }
 
 }
+
+@media screen and (max-width:1000px) {
+
+    .blog_page {
+        aside {
+          display: none;
+        }
+    
+        &_items_block {
+          max-width: unset;
+        }
+    
+        .blog_mid_item {
+          max-width: 284px;
+        }
+      }
+    
+}

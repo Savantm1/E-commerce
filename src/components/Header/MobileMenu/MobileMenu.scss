@@ -2,3 +2,9 @@
     display: none;
     width: 30px;
 }
+
+@media screen and (max-width:768px) {
+    .mobile_menu  {
+        display: block;
+    }
+}

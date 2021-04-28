@@ -13,3 +13,9 @@
 .tags_block {
     width: 100%;
 }
+
+@mixin tablets {
+    tags_block {
+        display: none;
+    }
+}

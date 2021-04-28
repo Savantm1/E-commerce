@@ -92,3 +92,46 @@
         transition: all ease 0.3s;
     }
 }
+
+@media screen and (max-width:1000px) {
+    .feedback_section {
+        .slider_window {
+          overflow: unset;
+          height: auto;
+        }
+  
+        h3 {
+          font-size: 2rem;
+          width: 100%;
+          text-align: center;
+          margin-top: 2rem;
+        }
+  
+        .slider_containter {
+          width: 100%;
+          flex-wrap: wrap;
+          position: relative;
+          justify-content: space-around;
+          padding: 0 3rem;
+        }
+  
+        .slider_arrow__block_right,
+        .slider_arrow__block_left {
+          display: none;
+        }
+  
+        .feedback_item {
+          max-width: 30%;
+          height: auto;
+          margin-bottom: 3rem;
+  
+          &__text {
+            font-size: 1rem;
+          }
+  
+          &__author {
+            margin-top: 1rem;
+          }
+        }
+      }
+}

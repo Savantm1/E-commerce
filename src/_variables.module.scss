@@ -30,38 +30,36 @@ $border: rgba(209, 209, 209, 1);
 // $phones: 480px;
 // $iphone: 320px;
 
-// @mixin desktop() {
-//   @media screen and (max-width:1440px) {
-//     @content;
+@mixin desktop() {
+  @media screen and (max-width:1260px) {
+    @content;
 
-//   }
-// }
+  }
+}
 
-// @mixin laptops() {
-//   @media screen and (max-width:1024px) {
-//     @content;
+@mixin laptops() {
+  @media screen and (max-width:1000px) {
+    @content;
+  }
+}
 
-//   }
-// }
+@mixin tablets() {
+  @media screen and (max-width:768px) {
+    @content;
+  }
+}
 
-// @mixin tablets() {
-//   @media screen and (max-width:768px) {
-//     @content;
+@mixin phones() {
+  @media screen and (max-width:540px) {
+    @content;
 
-//   }
-// }
-
-// @mixin phones() {
-//   @media screen and (max-width:480px) {
-//     @content;
-
-//   }
-// }
+  }
+}
 
 
-// @mixin minPhone() {
-//   @media screen and (max-width:380px) {
-//     @content;
+@mixin minPhones() {
+  @media screen and (max-width:380px) {
+    @content;
 
-//   }
-// }
+  }
+}

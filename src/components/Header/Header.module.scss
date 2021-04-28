@@ -35,3 +35,25 @@
   padding: 0 3rem;
   font-size: 2rem;
 }
+
+@media screen and (max-width:768px) {
+
+  .navigation__container {
+    display: none;
+  }
+
+  .middle_row {
+    padding: 1rem 1rem 0rem;
+  }
+
+
+  .person_block {
+    max-width: 120px;
+
+    img {
+      max-width:25px;
+    }
+  }
+
+
+}

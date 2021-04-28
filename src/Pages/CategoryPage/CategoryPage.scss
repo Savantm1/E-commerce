@@ -22,3 +22,52 @@
     
 
 }
+
+@media screen and (max-width:1000px) {
+    
+    .category_page {
+        aside {
+          display: none;
+        }
+    
+        .product_item_row {
+          &__price_block {
+            align-items: center;
+          }
+        }
+      }
+}
+
+@media screen and (max-width:768px) {
+  .category_page__title {
+    text-align: center;
+  }
+
+  .category_page {
+          
+    .product_item_row {
+      margin-bottom: 1rem;
+
+      &__description_block {
+        margin: 1rem;
+        min-width: 310px;
+      }
+
+      &__delivery {
+        margin-top: 1rem;
+      }
+
+      &__delivery_value {
+        margin-bottom: 1rem;
+      }
+
+      .parameters_list__item {
+        margin-bottom: 0.5rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

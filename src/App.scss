@@ -47,10 +47,6 @@ a {
   color: $black; 
 }
 
-html {
-  font-size:14px;
-}
-
 .app {
   display:flex;
   flex-direction: column;
@@ -72,4 +68,24 @@ html {
 
 .MuiSlider-root {
   color:$green !important;
+}
+
+
+@mixin desktop {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width:1000px) {
+
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .body__container {
+    padding: 0 1rem;
+  }
 }

@@ -43,3 +43,35 @@
     }
 
 }
+
+@media screen and (max-width:768px) {
+    .blog_item_large {
+        margin-top: 1rem;
+      }
+
+      .blog_item_large__info_blog {
+        flex-direction: column-reverse;
+        align-items: center;
+        top: 80px;
+        padding-bottom: 1rem;
+
+        h3 {
+            width: 90%;
+            text-align: center;
+        }
+
+        .blog_item_large__info_list {
+            flex-direction: row;
+            margin-right: 0;
+            width: 80%;
+      
+            .blog_item_large__list_item {
+              justify-content: flex-start;
+      
+              &__value {
+                margin-left: 1rem;
+              }
+            }
+          }
+      }
+}

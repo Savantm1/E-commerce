@@ -4,6 +4,7 @@
   width: 100%;
   display:flex;
   border-bottom: 2px solid rgba(21,21,21,0.15);
+
 }
 
 .info_list{
@@ -30,5 +31,12 @@
 
   &:last-child{
     justify-content: flex-end;
+  }
+}
+
+
+@media screen and (max-width:768px) {
+  .info_list__item {
+    
   }
 }

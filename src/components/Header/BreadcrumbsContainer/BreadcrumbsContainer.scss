@@ -13,3 +13,10 @@
 .MuiBreadcrumbs-li a[aria-current="page"]{
     color: black;
 }
+
+@media screen and (max-width:1000px) {
+    
+    .breadcrumbs__container {
+        display: none;
+      }
+}

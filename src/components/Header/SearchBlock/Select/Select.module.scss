@@ -17,3 +17,9 @@
     }
     
 }
+
+@media screen and (max-width:768px) {
+    .select {
+        display: none;
+    }
+}

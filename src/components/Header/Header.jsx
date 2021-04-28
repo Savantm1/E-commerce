@@ -25,7 +25,9 @@ const Header = (props) => {
   return (
     <>
       <header className={styles.header__container}>
-        <Navigation />
+        <div className={styles.navigation__container}>
+          <Navigation />
+        </div>
 
         <div className={styles.middle_row}>
           <Logo />
