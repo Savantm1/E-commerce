@@ -11,7 +11,7 @@ import BlogItemPage from "./Pages/BlogItemPage/BlogItemPage";
 import './responsive.scss';
 
 function App(props) {
-  const [view,setView] = useState(true);
+  const [view,setView] = useState(false);
   const changeView = () =>{
     setView( !view )
   } 

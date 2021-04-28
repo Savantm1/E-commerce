@@ -25,6 +25,12 @@
         margin-right: 1rem;
     }
 
+    &__params_block {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
     &__parameter {
         color: $black_active; 
         display: flex;

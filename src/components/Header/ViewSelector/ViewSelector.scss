@@ -98,3 +98,9 @@
         }
       }
 }
+
+@media screen and (max-width: 540px) {
+    .view_selector {
+        display: none;
+    }
+}

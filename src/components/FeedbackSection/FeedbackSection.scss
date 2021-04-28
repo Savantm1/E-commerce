@@ -135,3 +135,23 @@
         }
       }
 }
+
+
+
+@media screen and (max-width:540px) {
+  .feedback_section .slider_window{
+    margin: 0
+  }
+
+  .feedback_section .slider_containter {
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width:420px) {
+  .recipes_container {
+    .product_link {
+      width: 48%;
+    }
+  }
+}

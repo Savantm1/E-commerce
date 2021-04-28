@@ -30,3 +30,19 @@
         height: 200px;
       }
 }
+
+@media screen and (max-width: 540px) {
+
+    .recipe {
+        width: 100%;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items:flex-end;
+
+        &__subtitle {
+            width: 100%;
+        }
+
+    }
+}

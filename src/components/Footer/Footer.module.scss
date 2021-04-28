@@ -30,7 +30,7 @@
    .footer {
      width: 100%;
    }
-   
+
   .tags__container,
   .navigation_lists__container {
     display: none;
@@ -50,5 +50,37 @@
         }
       }
     }
+  }
+}
+
+
+@media screen and (max-width: 540px) {
+  .footer__container {
+    padding: 0;
+
+    .navigation {
+      display: flex;
+    }
+
+    ul {
+      flex-direction: column;
+
+      li {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 420px) {
+  .footer__container {
+
+    .navigation {
+      display: flex;
+      flex-direction: column;
+    }
+
   }
 }

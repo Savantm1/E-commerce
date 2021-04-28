@@ -107,3 +107,32 @@
     bottom:0;
     background-color:rgba($color: rgb(105, 102, 102), $alpha: 0.2)
 }
+
+@media screen and (max-width:1260px) {
+
+    .shopping_cart {
+        right: 3rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .shopping_cart {
+        right: 2rem;
+        top: 140px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .shopping_cart {
+        right: 1rem;
+        top: 60px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .shopping_cart {
+        max-width: 98%;
+        right: 1%;
+        top:0;
+    }
+}

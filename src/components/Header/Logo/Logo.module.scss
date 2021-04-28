@@ -3,9 +3,15 @@
     font-weight: 600;
     padding: 1rem 0px;
 
-    @media screen and(max-width:768px) {
-        .logo {
-            font-size: 1.5rem;
-        }
+}
+@media screen and(max-width:768px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and(max-width:540px) {
+    .logo {
+       display: none;
     }
 }

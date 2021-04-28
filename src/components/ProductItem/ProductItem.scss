@@ -111,13 +111,26 @@
 
 
 @media screen and (max-width:540px) {
+    .product_item {
+        height: 190px;
+
+        >span{
+            display: none;
+        }
+    }
 
     .product_item__price_block {
         flex-direction: column;
       }
     
       .product_item__price {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0rem;
         margin-right: 0;
+        font-size: 1.1rem;
+        line-height: 1rem;
+      }
+
+      .product_item__btn {
+          display: none;
       }
 }

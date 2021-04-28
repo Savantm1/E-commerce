@@ -66,3 +66,9 @@
         display: none;
       }
 }
+
+@media screen and (max-width:480px) {
+    .blog_section .blog_section__content_block {
+        flex-direction: column;
+    }
+}

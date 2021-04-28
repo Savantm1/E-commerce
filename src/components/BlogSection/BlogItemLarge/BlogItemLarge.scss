@@ -75,3 +75,20 @@
           }
       }
 }
+
+@media screen and (max-width:540px) {
+    .blog_item_large__info_blog h3{
+
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .blog_item_large__info_blog {
+        top: 35px;
+    }
+
+    .blog_item_large__info_list {
+        display: none;
+    }
+}

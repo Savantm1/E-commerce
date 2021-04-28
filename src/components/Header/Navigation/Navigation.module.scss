@@ -35,8 +35,28 @@
 }
 
 
-@media screen and (max-width:768px) {
-  .info_list__item {
-    
+@media screen and (max-width:540px) {
+
+  .navigation {
+    flex-direction: row !important;
+
+    li {
+      width: 108px !important;
+    }
+  }
+}
+
+
+@media screen and (max-width:420px) {
+
+  .navigation {
+    flex-direction: column !important;
+    ul {
+      padding: 0;
+    }
+
+    li {
+      width: 150px !important;
+    }
   }
 }

@@ -71,3 +71,15 @@
     }
   }
 }
+
+@media screen and (max-width:420px) {
+  .category_page {
+
+    .product_link {
+      width: 48%
+    }
+    .product_item {
+      height: 160px;
+    }
+  }
+}

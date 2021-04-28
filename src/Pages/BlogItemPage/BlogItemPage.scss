@@ -28,6 +28,7 @@
 
   .share_block {
     display: flex;
+    // flex-wrap: wrap;
     align-items: center;
     font-weight: 700;
     font-size: 1.5rem;
@@ -92,6 +93,7 @@
 @media screen and (max-width:768px) {
     .blog_item_page {
         flex-direction: column;
+        align-items:center
       }
 
       .comment_section__checkbox {
@@ -123,4 +125,12 @@
           }
 
       }
+}
+
+@media screen and(max-width:540px ) {
+    .blog_item_page .share_block .share {
+        font-size: 0.8rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
