@@ -1,0 +1,60 @@
+@import "./../../../../variables.module";
+
+.mobile_menu__container {
+    position: fixed;
+    overflow: hidden;
+    background-color: white;
+    left:0;
+    right: 0;
+    bottom: 0;
+    top:0;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem ;
+    align-items:center;
+    transition: all ease 0.3s;
+    height: 0;
+    opacity: 0;
+
+    &--active{
+        opacity: 1;
+        height: 100%;
+    }
+
+    .mobile_menu__close_img {
+        width: 25px;
+        cursor:pointer;
+    }
+
+    .mobile_menu__row {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        div>a>p {
+            display: flex;
+        }
+        margin-bottom: 1rem;
+    }
+
+    .mobile_menu__list {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        width: 100%;
+    }
+    
+    .mobile_menu__item {
+        padding: 1.5rem 0;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid $green;
+    }
+
+    .mobile_menu__item__link {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+}

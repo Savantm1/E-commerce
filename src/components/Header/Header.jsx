@@ -8,15 +8,22 @@ import styles from "./Header.module.scss";
 import Login from "./Login/Login";
 import Logo from "./Logo/Logo";
 import Menu from "./Menu/Menu";
+import MobileContainer from "./MobileMenu/MobileContainer/MobileContainer";
 import MobileMenu from "./MobileMenu/MobileMenu";
 import Navigation from "./Navigation/Navigation";
 import SearchBlock from "./SearchBlock/SearchBlock";
 import ViewSelector from "./ViewSelector/ViewSelector";
+import ReactCSSTransitionGroup from 'react-transition-group';
 
 const Header = (props) => {
 
   let [basketToggler,changeBasketToggler] = useState(false);
-
+  let [mobileToggler,changeMobileToggler] = useState(false);
+  
+  const MobileHandler = (evt) => {
+    evt.preventDefault();
+    changeMobileToggler(!mobileToggler)
+  }
   const BasketHandler = (evt) => {
     evt.preventDefault();
     changeBasketToggler(!basketToggler)
@@ -33,11 +40,12 @@ const Header = (props) => {
           <Logo />
           <SearchBlock />
           <div className={styles.person_block}>
-            <MobileMenu/>
             <Login />
             <BasketLogo BasketHandler={BasketHandler} />
+            <MobileMenu MobileHandler={MobileHandler}/>
           </div>
-          {basketToggler? <Basket BasketHandler={BasketHandler}/> : null}
+              <Basket basketToggler={basketToggler} BasketHandler={BasketHandler}/> 
+              <MobileContainer mobileToggler={mobileToggler} MobileHandler={MobileHandler}/> 
         </div>
 
         <Menu />

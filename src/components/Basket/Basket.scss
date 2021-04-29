@@ -2,7 +2,7 @@
 
 .shopping_cart {
     
-    z-index: 100;
+    z-index: -1;
     position: absolute;
     right: calc(50% + (-580px));
     top:150px;
@@ -15,9 +15,15 @@
     box-sizing:border-box;
     max-width: 400px;
     width: 100%;
-    min-height: 720px;
-    max-height: 70vh;
+    min-height: 0;
+    max-height: 0;
     overflow: scroll;
+
+    &--active {
+        z-index: 20;
+        min-height: 720px;
+        max-height: 70vh;
+    }
 
     &::-webkit-scrollbar {
         width: 0;
@@ -33,14 +39,16 @@
         top: 0;
         background-color: white;
         border-bottom: 1px solid $border;
-        z-index: 110;
+        // z-index: 110;
         padding: 0 1rem;
         margin-bottom: 1rem;
 
-        .shopping_cart__close {
+        .shopping_cart__close_img {
             display: flex;
             align-items: center;
             color: $black_active;
+            width: 25px;
+            cursor:pointer;
 
             span {
                 color: black;
@@ -100,12 +108,23 @@
 }
 
 .basket_cover {
+    z-index: 10;
     position:absolute;
     left:0;
     right:0;
     top:0;
     bottom:0;
-    background-color:rgba($color: rgb(105, 102, 102), $alpha: 0.2)
+    background-color:rgba($color: rgb(105, 102, 102), $alpha: 0.2);
+    opacity: 0;
+    height: 0;
+    transition: all ease 0.3s;
+
+    &--active {
+        // z-index: 100;
+        opacity: 1;
+        height: 100%;
+
+    }
 }
 
 @media screen and (max-width:1260px) {
