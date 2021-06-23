@@ -16,7 +16,7 @@ const StyledFilters = styled.aside`
 const Filters = (props) => {
   return (
     <StyledFilters {...props}>
-      <Category />
+      <Category bestSelling = {props.bestSelling} bestFromFarmers = {props.bestFromFarmers}/>
       <Brands/>
       <Rating/>
       <SliderPrice/>

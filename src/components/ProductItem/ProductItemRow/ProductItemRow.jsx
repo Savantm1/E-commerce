@@ -21,24 +21,29 @@ const ParametersList = charactersData.map((element, index) => {
 });
 
 const ProductItemRow = (props) => {
+  
+  const category = props.productData.categoryName ? props.productData.categoryName : props.category;
+
+  const imgURL =`http://localhost:7000/products/${props.productData.category.category_name}/${props.productData.pictures[0].image_name}`;
+
   return (
     <>
-      <Link to="/product">
+      <Link to={`/category/${category}/product/${props.productData.id}`}>
         <div className="product_item_row">
           <div className="product_item_row__img_block">
-            {/* <img src="" alt="" className="product_item__img"/> */}
+          {props.productData? <img src={imgURL} alt="" className="product_item__img"/> : null}
           </div>
           <div className="product_item_row__description_block">
             <div className="product_item_row__description_column">
-              <p className="product_item_row__title">Product Title</p>
+              <p className="product_item_row__title">{props.productData? props.productData.productName :'Product Title'}</p>
               <p className="product_item_row__subtitle">
-                Space for a small product description
+                {props.productData? props.productData.subhead : 'Space for a small product description'}
               </p>
-              <Rating className="product_item_row__rating" value="4" readOnly />
+              <Rating className="product_item_row__rating" value={props.productData.rating} readOnly />
               <ul className="parameters_list">{ParametersList}</ul>
             </div>
             <div className="product_item_row__price_block">
-              <span className="product_item_row__price">36.99 USD</span>
+              <span className="product_item_row__price">{props.productData.price} USD</span>
               <span className="product_item_row__delivery">Free Shipping</span>
               <span className="product_item_row__delivery_value">
                 Delivery in 1 day

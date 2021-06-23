@@ -1,21 +1,29 @@
 import React from "react";
-import CategoryMenu from "../Filters/CategoryMenu/CategoryMenu";
+
+import CategoryMenuContainer from "../Filters/CategoryMenu/CategoryMenuContainer";
 import Title from "../Filters/Title/Title";
 import ProductItem from "../ProductItem/ProductItem";
 
 const CategorySectionRowProducts = (props) => {
+
+  const productsArray  = props.productsArray.map((product,index) =>{
+    if(index < props.countProducts){
+        return(
+        <ProductItem key = {index} productData = {product} />
+        )
+      }
+  })
   return (
     <>
       <section className="category_section_row">
-        <CategoryMenu
-          className="category_section_row__filter"
+        <CategoryMenuContainer
           categoryName={props.categoryName}
+          bestSelling={props.bestSelling || false}
+          bestFromFarmers={props.bestFromFarmers || false}
         />
         <div className="recipes_container">
           <Title >{props.categoryName}</Title>
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
+        {productsArray}
         </div>
       </section>
     </>

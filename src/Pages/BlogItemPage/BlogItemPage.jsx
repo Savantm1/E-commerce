@@ -67,15 +67,15 @@ const BlogItemPage = (props) => {
           </p>
           <div className="share_block">
             Share
-            <a href="#" className="share" alt="vk">
+            <a href="/#" className="share" alt="vk">
               <img src={vk} alt="vk" />
               Vkontakte
             </a>
-            <a href="#" className="share" alt="twitter">
+            <a href="/#" className="share" alt="twitter">
               <img src={twitter} alt="vk" />
               Twitter
             </a>
-            <a href="#" className="share" alt="facebook">
+            <a href="/#" className="share" alt="facebook">
               <img src={facebook} alt="vk" />
               Facebook
             </a>

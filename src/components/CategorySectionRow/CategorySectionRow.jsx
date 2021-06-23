@@ -1,5 +1,5 @@
 import React from 'react'
-import CategoryMenu from '../Filters/CategoryMenu/CategoryMenu'
+import CategoryMenuContainer from '../Filters/CategoryMenu/CategoryMenuContainer'
 import Title from '../Filters/Title/Title'
 import RecipeItem from '../RecipeItem/RecipeItem'
 import "./CategorySectionRow.scss"
@@ -8,7 +8,7 @@ const CategorySectionRow = (props) => {
     return (
         <>
             <section className="category_section_row">
-                <CategoryMenu className="category_section_row__filter" categoryName={props.categoryName}/>
+                <CategoryMenuContainer className="category_section_row__filter" categoryName={props.categoryName}/>
                 <div className="recipes_container">
                     <Title>{props.categoryName}</Title>
                     <RecipeItem />

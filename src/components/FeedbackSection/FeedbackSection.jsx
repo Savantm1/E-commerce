@@ -22,11 +22,9 @@ const FeedbackSection = (props) => {
       currentPosition += step;
       $feedbackList.current.style.left = currentPosition + "px";
       $arrowRight.current.classList.remove("slider_arrow__default");
-      console.log('step',step, 'currentP',currentPosition, 'minLeft',minLeft)
     }
     if (currentPosition === minLeft) {
       $arrowLeft.current.classList.add("slider_arrow__default");
-      console.log('step',step, 'currentP',currentPosition, 'minLeft',minLeft)
     }
   };
 
@@ -38,11 +36,9 @@ const FeedbackSection = (props) => {
       currentPosition -= step;
       $feedbackList.current.style.left = currentPosition + "px";
       $arrowLeft.current.classList.remove("slider_arrow__default");
-      console.log('step',step, 'currentP',currentPosition, 'maxLeft',maxLeft)
     }
     if (currentPosition <= maxLeft) {
       $arrowRight.current.classList.add("slider_arrow__default");
-      console.log('step',step, 'currentP',currentPosition, 'maxLeft',maxLeft)
     }
   };
 
@@ -50,15 +46,14 @@ const FeedbackSection = (props) => {
     return(
       <FeedbackItem 
         key = {index}
-        name = {element.name}
-        surname = {element.surname}
-        message = {element.message}
+        personName = {element.personName}
+        message = {element.feedbackText}
         avatar = {element.avatar}
         />
     )
   })
 
-  return (
+  return ( !props.feedback ? <div>Нет данных</div> : 
     <div className="feedback_section">
       <Title>Our customers says</Title>
       <div className="slider_window">

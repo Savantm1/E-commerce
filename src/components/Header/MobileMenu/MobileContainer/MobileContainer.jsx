@@ -3,23 +3,16 @@ import { Link } from 'react-router-dom';
 import Logo from '../../Logo/Logo';
 import "./MobileContainer.scss";
 import close from "./../../../../assets/icons/close.svg"
+import { useSelector } from 'react-redux';
 
 const MobileContainer = (props) => {
 
-    const menuItemsData = [
-        "Bakery",
-        "Fruit and vegetables",
-        "Meat and fish",
-        "Drinks",
-        "Kitchen",
-        "Special nutrition",
-        "Baby",
-        "Pharmacy",
-      ];
-
-    const menuLinks = menuItemsData.map((elem,index)=> {
+    const categoriesArray = useSelector(state => state.categories.categories);
+  
+    const menuLinks = categoriesArray.map((elem,index)=> {
         return (
-            <li className="mobile_menu__item"  onClick={props.MobileHandler} key={index}><Link className="mobile_menu__item__link" to="#">{elem}</Link></li>
+            <li className="mobile_menu__item"  onClick={props.MobileHandler} key={index}><Link className="mobile_menu__item__link" to="#">{elem.category_name
+            }</Link></li>
         )
     })
     return (

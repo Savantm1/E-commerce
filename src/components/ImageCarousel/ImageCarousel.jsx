@@ -11,7 +11,7 @@ const ImageCarousel = (props) => {
   let slideItems = imageArr.map((elem, index) => {
     return (
       <div key ={index}>
-        <img src={image} alt="image"/>
+        <img src={image} alt="img_"/>
         {/* <p className="legend">Legend 1</p> */}
       </div>
     );

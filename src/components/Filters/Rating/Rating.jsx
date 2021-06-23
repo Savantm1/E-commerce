@@ -14,7 +14,7 @@ const starsElements = stars.reverse().map((element) => {
 const Rating = (props) => {
   return (
     <StyledRating {...props}>
-      <Title>Price</Title>
+      <Title>Rating</Title>
       {starsElements}
     </StyledRating>
   );

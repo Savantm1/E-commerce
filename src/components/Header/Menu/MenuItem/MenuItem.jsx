@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const MenuItem = (props) => {
   return (
-    <Link className={styles.link} to="/category">
+    <Link className={styles.link} to={`/category/${props.id}`}>
       <div className={styles.item}>
         <p className={styles.title}>{props.title}</p>
         <img className={styles.arrow} src={arrow} alt="arrow" />

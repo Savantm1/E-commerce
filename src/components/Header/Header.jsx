@@ -3,17 +3,17 @@ import { useState } from "react";
 import { Route } from "react-router";
 import Basket from "../Basket/Basket";
 import BasketLogo from "./BasketLogo/BasketLogo";
-import BreadcrumbsContainer from "./BreadcrumbsContainer/BreadcrumbsContainer";
+import BreadcrumbWithUrl from "./../BreadcrumbsContainer/BreadcrumbsContainer";
+import BreadcrumbsContainer from ".././BreadcrumbsContainer/BreadcrumbsContainer";
 import styles from "./Header.module.scss";
 import Login from "./Login/Login";
 import Logo from "./Logo/Logo";
-import Menu from "./Menu/Menu";
+import MenuContainer from "./Menu/MenuContainer";
 import MobileContainer from "./MobileMenu/MobileContainer/MobileContainer";
 import MobileMenu from "./MobileMenu/MobileMenu";
 import Navigation from "./Navigation/Navigation";
 import SearchBlock from "./SearchBlock/SearchBlock";
-import ViewSelector from "./ViewSelector/ViewSelector";
-import ReactCSSTransitionGroup from 'react-transition-group';
+
 
 const Header = (props) => {
 
@@ -48,15 +48,7 @@ const Header = (props) => {
               <MobileContainer mobileToggler={mobileToggler} MobileHandler={MobileHandler}/> 
         </div>
 
-        <Menu />
-
-        <Route path="/category">
-          <h1 className={styles.category_page__title}>Fruit and vegetables</h1>
-          <div className={styles.breadcrumb_view_selector}>
-            <BreadcrumbsContainer />
-            <ViewSelector changeView={props.changeView} />
-          </div>
-        </Route>
+        <MenuContainer />
 
         <Route path="/product">
           <div className={styles.breadcrumb_view_selector}>
@@ -66,7 +58,7 @@ const Header = (props) => {
 
         <Route path="/blog">
           <div className={styles.breadcrumb_view_selector}>
-            <BreadcrumbsContainer />
+            <BreadcrumbWithUrl />
           </div>
           <h1 className={styles.category_page__title}>Fruit and vegetables</h1>
         </Route>

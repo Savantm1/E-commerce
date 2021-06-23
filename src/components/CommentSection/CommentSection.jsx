@@ -12,7 +12,7 @@ const CommentSection = (props) => {
       <section className="comment_section">
         <Title width="100%">Leave a reply</Title>
         <p className="comment_section__signin">
-          Already have an account? <a href="#">Sign in</a> to leave a reply.
+          Already have an account? <a href="/#">Sign in</a> to leave a reply.
         </p>
         <label className="comment_section__label" >
           Name

@@ -42,7 +42,7 @@ const StyledItemCheckbox = styled.input.attrs({ type: 'checkbox' })`
 
 const ItemCheckbox = (props) => {
     return (
-            <StyledItemCheckbox {...props}>
+            <StyledItemCheckbox {...props} defaultChecked>
             </StyledItemCheckbox>
 
 

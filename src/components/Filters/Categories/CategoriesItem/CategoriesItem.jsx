@@ -13,9 +13,10 @@ const StyledCategoriesItem = styled.li`
 `;
 
 const CategoriesItem = (props) => {
+
   return (
       <StyledCategoriesItem {...props}>
-        {props.itemName}
+          {props.itemName}
         <ItemCounter count={props.count} />
       </StyledCategoriesItem>
   );

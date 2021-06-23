@@ -1,5 +1,12 @@
 @import "../../variables.module";
 
+
+.breadcrumb_view_selector {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .product_page {
   display: flex;
   justify-content: space-between;
@@ -9,6 +16,7 @@
     display: flex;
     flex-direction: column;
     margin-right: 3rem;
+    margin-top: 1rem;
     flex: 1;
 
     .image_item_container {
@@ -21,11 +29,17 @@
       margin-bottom: 2rem;
       // width: 100%;
       // height: 100%;
+
+      & > img {
+        max-height: 400px;
+        object-fit: contain;
+      }
     }
   }
 }
 
 .description_block {
+  
   flex: 1.2;
 
   .rating_block {

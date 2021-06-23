@@ -1,3 +1,13 @@
+.breadcrumb_view_selector {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .category_page__title {
+    text-transform: capitalize;
+  }
+}
+
 .category_page {
     display: flex;
     justify-content: space-between;
@@ -19,6 +29,8 @@
     aside{ 
         margin-right: 2rem;
     }
+
+
     
 
 }
@@ -41,6 +53,7 @@
 @media screen and (max-width:768px) {
   .category_page__title {
     text-align: center;
+
   }
 
   .category_page {

@@ -1,10 +1,10 @@
-@import "../../../variables.module";
+@import "./../../variables.module";
 
 .view_selector {
     width: 50%;
     display: flex;
     justify-content: flex-end;
-    padding: 1.5rem 3rem;
+    padding: 1.5rem 0;
     align-items: center;
     color: darkgrey;
 
@@ -36,12 +36,12 @@
     }
 
     .grid:before {
-        background: url('./../../../assets/icons/ic-layout-square-grid.svg');
+        background: url('./../../assets/icons/ic-layout-square-grid.svg');
         background-size: contain;
     }
 
     .inline:before {
-        background: url('./../../../assets/icons/ic-layout-sections.svg');
+        background: url('./../../assets/icons/ic-layout-sections.svg');
         background-size: contain;
     }
 

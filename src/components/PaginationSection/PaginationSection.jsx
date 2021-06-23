@@ -25,7 +25,7 @@ const PaginationSection = (props) => {
             </div>
             <Button value="Show more ∨"/>
             <div className="products_block">
-                <div className="products_block__count">336</div>
+                <div className="products_block__count">{props.count}</div>
                 <p >Products</p>
             </div>
         </div>

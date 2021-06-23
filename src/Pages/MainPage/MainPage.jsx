@@ -6,12 +6,25 @@ import FeedbackSectionContainer from "../../components/FeedbackSection/FeedbackS
 import "./MainPage.scss"
 
 const MainPage = (props) => {
-  
+
   return (
-    <div className="mainpage"> 
-      <CategorySectionRow categoryName="Recipes" />
-      <CategorySectionRowProducts categoryName="Best selling products" />
-      <CategorySectionRowProducts categoryName="Best from Farmers" />
+    <div className = "mainpage"> 
+
+      <CategorySectionRow categoryName = "Recipes" />
+
+      <CategorySectionRowProducts 
+        categoryName = "Best selling products"
+        productsArray = {props.bestSellingArray}
+        bestSelling={true} 
+        countProducts = {props.countProducts} 
+      />
+
+      <CategorySectionRowProducts 
+        categoryName = "Best from Farmers" 
+        productsArray = {props.bestFromFarmersArray}  
+        bestFromFarmers = {true}
+        countProducts = {props.countProducts} 
+      />
       <FeedbackSectionContainer />
       <BlogSection />
     </div>
