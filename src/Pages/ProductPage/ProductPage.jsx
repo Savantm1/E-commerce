@@ -7,7 +7,7 @@ import styles from "./ProductPage.module.scss";
 import ImageCarousel from "../../components/ImageCarousel/ImageCarousel";
 
 const ProductPage = (props) => {
-debugger
+
   let data = [
     { SKU: 7645 },
     { Category: "Vegetables" },

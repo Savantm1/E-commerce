@@ -4,7 +4,7 @@ import "./CategoryMenu.scss";
 import { Link } from "react-router-dom";
 
 const CategoryMenu = (props) => {
-  debugger
+  
 
   const linksElements = props.categories.map((element, index) => {
     if(props.bestSelling){

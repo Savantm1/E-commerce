@@ -3,8 +3,8 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import { BrowserRouter, Route } from "react-router-dom";
 import { useState } from "react";
-import BlogPage from "./Pages/BlogPage/BlogPage";
-import BlogItemPage from "./Pages/BlogItemPage/BlogItemPage";
+import WithUrlDataBlogPage from "./Pages/BlogPage/BlogPageContainer";
+import WithUrlDataBlogItemPage from "./Pages/BlogItemPage/BlogItemPageContainer";
 import "./responsive.scss";
 import MainPageContainer from "./Pages/MainPage/MainPageContainer";
 import WithUrlDataCategory from "./Pages/CategoryPage/CategoryPageContainer";
@@ -60,8 +60,8 @@ function App(props) {
               />
             )}
           />
-          <Route path="/blog" render={() => <BlogPage />} />
-          <Route path="/blog_item" render={() => <BlogItemPage />} />
+          <Route path="/blog" render={() => <WithUrlDataBlogPage />} />
+          <Route path="/blog_item" render={() => <WithUrlDataBlogItemPage />} />
         </div>
         <Footer />
       </div>

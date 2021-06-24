@@ -1,16 +1,17 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { getBlogs } from "../../redux/BlogSlice";
 import { getProducts } from "../../redux/ProductsSlice";
 import MainPage from "./MainPage";
 
 const MainPageContainer = (props) => {
-  debugger;
+  ;
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(
       getProducts({ limit: 20, bestSelling: true, bestFromFarmers: true })
     );
-    debugger;
+    dispatch(getBlogs());
   }, [dispatch]);
 
   const productsArray = useSelector((state) => state.products.productsArray);
@@ -19,7 +20,7 @@ const MainPageContainer = (props) => {
   );
   const bestSellingsArray = productsArray.filter((elem) => elem.bestSelling);
 
-  debugger;
+  ;
   const countProducts = 3;
 
   return (

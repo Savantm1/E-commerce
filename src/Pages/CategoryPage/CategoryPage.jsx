@@ -7,7 +7,7 @@ import "./CategoryPage.scss";
 import ViewSelector from "../../components/ViewSelector/ViewSelector";
 
 const CategoryPage = (props) => {
-  debugger;
+  ;
    const category = props.category;
    let subCategory = props.bestSelling? "Best Selling" : "Best From Farmers"; 
    if(!props.bestSelling && !props.bestFromFarmers) {subCategory= ""};
@@ -49,7 +49,11 @@ const CategoryPage = (props) => {
           )}
         </div>
       </div>
-      <PaginationSection  count={props.count}/>
+      <PaginationSection  
+        count={props.count}
+        changePageFunc={props.changePageFunc}
+        currentPage={props.currentPage}
+      />
     </>
   );
 };

@@ -9,13 +9,28 @@ import PaginationSection from '../../components/PaginationSection/PaginationSect
 import Subscribe from '../../components/Filters/Subscribe/Subscribe'
 
 const BlogPage = (props) => {
-    debugger
+debugger
+    const mainRowBlogItems = props.blogArr.map((element,index)=>{
+            if(index < 2) {
+                return(
+                    <BlogBigItem large="true" key={index} data={element} bgImg={bigItemImg} avatar={avatar}/>
+                    )
+            }
+    })
+
+    const middleBlogItems = props.blogArr.map((element,index) => {
+        if(index >=2) {
+            return(
+                <BlogMidItem key={index} postImg={postImg} data={element} />
+                )
+        }
+    })
+
     return (
         <>
             <div className="blog_page">
                 <div className="blog_page__main_row">
-                    <BlogBigItem large="true" bgImg={bigItemImg} avatar={avatar}/>
-                    <BlogBigItem large="true" bgImg={bigItemImg} avatar={avatar}/>     
+                    {mainRowBlogItems}
                 </div>
                 <div className="blog_page__section">
                     <aside>
@@ -24,15 +39,7 @@ const BlogPage = (props) => {
                         <Subscribe/>
                     </aside>
                     <div className="blog_page_items_block">
-                        <BlogMidItem postImg={postImg}/>
-                        <BlogMidItem postImg={postImg}/>
-                        <BlogMidItem postImg={postImg}/>
-                        <BlogMidItem postImg={postImg}/>
-                        <BlogMidItem postImg={postImg}/>
-                        <BlogMidItem postImg={postImg}/>
-                        <BlogMidItem postImg={postImg}/>
-                        <BlogMidItem postImg={postImg}/>
-                        <BlogMidItem postImg={postImg}/>
+                        {middleBlogItems}
                     </div>
                 </div>
                 <PaginationSection />

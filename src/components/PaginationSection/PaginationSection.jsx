@@ -4,15 +4,22 @@ import "./PaginationSection.scss"
 
 const PaginationSection = (props) => {
 
-    let totalUsersCount = 40
-    let  pageSize = 10
-    let pagesCount = Math.ceil(totalUsersCount / pageSize);
+    let totalProductsCount = props.count
+    let  pageSize = 9
+    let pagesCount = Math.ceil(totalProductsCount / pageSize);
     let pages = [];
     for (let i = 1; i <= pagesCount; i++){
       pages.push(i);
     }
     let paginationItems =  pages.map((p,i) => { 
-        return <li key={i} className="pagination_item">{p}</li>
+        return <li 
+                    key={i}  
+                    className={`${props.currentPage === p ? 
+                        "pagination_item pagination_item--active" : 
+                        "pagination_item"}`}
+                        onClick={() => props.changePageFunc(p)}
+                        >{p}
+                </li>
     })
 
     return (
@@ -23,7 +30,7 @@ const PaginationSection = (props) => {
                     {paginationItems}
                 </ul>
             </div>
-            <Button value="Show more ∨"/>
+            {/* <Button value="Show more ∨"/> */}
             <div className="products_block">
                 <div className="products_block__count">{props.count}</div>
                 <p >Products</p>

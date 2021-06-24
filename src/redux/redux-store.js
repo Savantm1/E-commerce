@@ -4,6 +4,7 @@ import categoriesReducer from "./CategoriesSlice";
 import productReducer from "./ProductsSlice";
 import singleProductReducer from "./SingleProductSlice"
 import singleCategoryReducer from "./SingleCategorySlice";
+import blogReducer from "./BlogSlice"
 
 export default configureStore( {
     reducer: {
@@ -11,6 +12,7 @@ export default configureStore( {
         categories: categoriesReducer,
         products: productReducer,
         product: singleProductReducer,
-        category:  singleCategoryReducer
+        category:  singleCategoryReducer,
+        blog: blogReducer
     }
 })

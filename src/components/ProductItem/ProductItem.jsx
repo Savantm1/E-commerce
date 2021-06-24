@@ -5,7 +5,7 @@ import Button from '../Button/Button';
 import  "./ProductItem.scss";
 
 const ProductItem = (props) => {
-    debugger
+    
     const category = props.category || props.productData.categoryId ;
     const imgURL =`http://localhost:7000/products/${props.productData.category.category_name}/${props.productData.pictures[0].image_name}`;
     

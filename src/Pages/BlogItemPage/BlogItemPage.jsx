@@ -10,10 +10,28 @@ import BlogMidItem from "../../components/BlogSection/BlogMidItem/BlogMidItem";
 import Title from "../../components/Filters/Title/Title";
 import postImg from "../../assets/img/Rectangle 26-2 s.png";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 
 
 const BlogItemPage = (props) => {
+  const blogItemsArr = useSelector((state) => state.blog.blog);
+  debugger;
+
+  const blogMidArr = blogItemsArr.map((element, index) => {
+    if (index < 4 ) {
+      debugger;
+      return (
+        <BlogMidItem
+          key={index}
+          data={element}
+          postImg={postImg}
+        />
+      );
+    }
+  });
+
+  debugger
   return (
     <>
       <BlogItemLarge />
@@ -85,10 +103,11 @@ const BlogItemPage = (props) => {
       </div>
       <section className="releated_section">
           <Title width="100%"> Releated topics</Title>
+          {/* < BlogMidItem postImg={postImg}/>
           < BlogMidItem postImg={postImg}/>
           < BlogMidItem postImg={postImg}/>
-          < BlogMidItem postImg={postImg}/>
-          < BlogMidItem postImg={postImg}/>
+          < BlogMidItem postImg={postImg}/> */}
+          {blogMidArr}
         </section>
     </>
   );

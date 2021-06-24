@@ -3,7 +3,7 @@ import API from "../api/api";
 
 
 export const getProducts = createAsyncThunk('products/getProducts', async ({limit,bestSelling,bestFromFarmers}) => {
-    debugger
+    
     return await API.getProducts(limit,bestFromFarmers,bestSelling);
 });
 
@@ -17,7 +17,7 @@ export const productSlice = createSlice ({
             state.status = "loading"
         },
         [getProducts.fulfilled] : (state,action) => {
-            debugger
+            
             state.productsArray = action.payload.products;
             state.status= "success"
         },

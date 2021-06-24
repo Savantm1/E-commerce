@@ -6,7 +6,7 @@ import { getProduct } from "../../redux/SingleProductSlice";
 import ProductPage from "./ProductPage";
 
 const ProductPageContainer = (props) => {
-  debugger;
+  ;
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getProduct(props.match.params.product));
@@ -18,7 +18,7 @@ const ProductPageContainer = (props) => {
         category: props.match.params.category,
       })
     );
-    debugger;
+    ;
   }, [dispatch, props.match.params]);
 
   const productData = useSelector((state) => state.product.product);

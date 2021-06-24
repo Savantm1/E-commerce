@@ -19,9 +19,7 @@ export const categoriesSlice = createSlice ({
              {category_name:"Pharmacy"},
           ]
     },
-    // reducers : {
 
-    // },
     extraReducers : {
         [getCategories.pending] : (state,action) => {
             state.status = "loading"
@@ -36,5 +34,5 @@ export const categoriesSlice = createSlice ({
     }
 })
 
-// export const {} = categoriesSlice.actionse
+
 export default categoriesSlice.reducer

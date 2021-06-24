@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getCategory } from "../../redux/SingleCategorySlice";
+import { getCategory, selectPage } from "../../redux/SingleCategorySlice";
 import CategoryPage from "./CategoryPage";
 import { withRouter } from "react-router";
 
@@ -15,13 +15,25 @@ const CategoryPageContainer = (props) => {
         limit: 9,
       })
     );
-    debugger;
+    dispatch(selectPage(1))
   }, [
     dispatch,
     props.match.params.category,
     props.bestFromFarmers,
     props.bestSelling,
   ]);
+
+  const currentPage = useSelector(state=> state.category.currentPage);
+  const changePageFunc = (page) => {
+      dispatch(selectPage(page));
+      dispatch(
+          getCategory({
+            category: props.match.params.category,
+            limit: 9,
+            page
+          })
+        );
+  }
 
   const categoryProductsData = useSelector(
     (state) => state.category.categoryProducts.products
@@ -30,7 +42,7 @@ const CategoryPageContainer = (props) => {
   const category = useSelector(
     (state) => state.category.categoryProducts.categoryName
   );
-  debugger;
+
   return (
     <CategoryPage
       categoryProductsData={categoryProductsData ? categoryProductsData : []}
@@ -40,6 +52,8 @@ const CategoryPageContainer = (props) => {
       count={count}
       bestFromFarmers={props.bestFromFarmers}
       bestSelling={props.bestSelling}
+      changePageFunc={changePageFunc}
+      currentPage={currentPage}
     />
   );
 };

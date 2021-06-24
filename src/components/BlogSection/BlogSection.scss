@@ -11,11 +11,14 @@
         justify-content: space-between;
         margin-top: 1rem;
         
+        .blog_big_item__link {
+          width: 85%;
+      }
          .blog_mid_item {
             margin: 0 1rem;
 
             &:nth-child(2) {
-                display: none;
+                // display: none;
             }
         }
 
@@ -23,6 +26,8 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            width: 60%;
+            align-items: flex-end;
         }
     }
 }

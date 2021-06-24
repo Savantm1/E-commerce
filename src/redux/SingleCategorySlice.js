@@ -2,22 +2,29 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import API from "../api/api";
 
 
-export const getCategory = createAsyncThunk('category/getCategory', async({category, bestSelling=false, bestFromFarmers=false, limit=9}) => {
-    debugger
-    return await API.getCategoryProducts(category,bestSelling,bestFromFarmers,limit);
+export const getCategory = createAsyncThunk('category/getCategory', async({category, bestSelling=false, bestFromFarmers=false, limit=9,page=1}) => {
+
+    
+    return await API.getCategoryProducts(category,bestSelling,bestFromFarmers,limit,page);
 })
 
 export const singleCategorySlice = createSlice ({
     name: "category",
     initialState: {
-        categoryProducts: [ ]
+        categoryProducts: [ ],
+        currentPage: 1, 
+    },
+    reducers: {
+        selectPage(state,action) {
+            state.currentPage = action.payload
+        }
     },
     extraReducers : {
         [getCategory.pending] : (state,action) => {
             state.status = "loading"
           },
           [getCategory.fulfilled] : (state,action) => {
-              debugger
+              
             state.categoryProducts = action.payload;
             state.status = "success"
         },
@@ -27,5 +34,6 @@ export const singleCategorySlice = createSlice ({
     }
 })
 
+export const {selectPage} = singleCategorySlice.actions;
 export default singleCategorySlice.reducer
 

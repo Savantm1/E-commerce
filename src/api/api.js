@@ -4,18 +4,20 @@ const instance = axios.create({
     baseURL: "http://localhost:7000/api/",
   })
 
-  export const  API = {
+  export const API = {
 
      async getCategories(){
         return await instance.get(`/categories`).then(response =>{
-          debugger
+
           return response.data;
           })
       },
 
-     async getCategoryProducts(categoryId,bestSelling = false,bestFromFarmers = false){
-       return await instance.get(`/products?categoryId=${categoryId}&bestSelling=${bestSelling}&bestFromFarmers=${bestFromFarmers}`).then(response =>{
-          debugger
+     async getCategoryProducts(categoryId,bestSelling = false,bestFromFarmers = false,limit,page){
+       console.log('params',categoryId,page)
+       return await instance.get(`/products?categoryId=${categoryId}&bestSelling=${bestSelling}&bestFromFarmers=${bestFromFarmers}&page=${page}`).then(response =>{
+
+          console.log(response.data);
           return response.data;
           })
       },
@@ -26,7 +28,7 @@ const instance = axios.create({
           })
       },
      async getProducts(limit = 10,bestFromFarmers=false,bestSelling=false,page=1){
-       debugger
+
           return await instance.get(`products?limit=${limit}&bestFromFarmers=${bestFromFarmers}&bestSelling=${bestSelling}&page=${page}`).then(response => {
             return response.data;
           })
@@ -36,6 +38,14 @@ const instance = axios.create({
             return response.data;
           })
       },
+
+      async getBlogs(){
+        
+        return await instance.get(`blog`).then(response => {
+          console.log(response.data)
+          return response.data;
+        })
+      }
 
   }
 

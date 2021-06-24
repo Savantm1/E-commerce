@@ -10,7 +10,7 @@ const MainPage = (props) => {
   return (
     <div className = "mainpage"> 
 
-      <CategorySectionRow categoryName = "Recipes" />
+      <CategorySectionRow categoryName = "Blog" />
 
       <CategorySectionRowProducts 
         categoryName = "Best selling products"
