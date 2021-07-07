@@ -7,7 +7,7 @@ import "./CategoryPage.scss";
 import ViewSelector from "../../components/ViewSelector/ViewSelector";
 
 const CategoryPage = (props) => {
-  ;
+  
    const category = props.category;
    let subCategory = props.bestSelling? "Best Selling" : "Best From Farmers"; 
    if(!props.bestSelling && !props.bestFromFarmers) {subCategory= ""};

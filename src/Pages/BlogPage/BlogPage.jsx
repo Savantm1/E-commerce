@@ -9,7 +9,7 @@ import PaginationSection from '../../components/PaginationSection/PaginationSect
 import Subscribe from '../../components/Filters/Subscribe/Subscribe'
 
 const BlogPage = (props) => {
-debugger
+
     const mainRowBlogItems = props.blogArr.map((element,index)=>{
             if(index < 2) {
                 return(
@@ -42,7 +42,7 @@ debugger
                         {middleBlogItems}
                     </div>
                 </div>
-                <PaginationSection />
+                {/* <PaginationSection /> */}
             </div>
         </>
     )

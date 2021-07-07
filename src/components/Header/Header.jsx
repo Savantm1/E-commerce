@@ -50,21 +50,21 @@ const Header = (props) => {
 
         <MenuContainer />
 
-        <Route path="/product">
+        <Route path="/category">
           <div className={styles.breadcrumb_view_selector}>
-            <BreadcrumbsContainer />
+            {/* <BreadcrumbsContainer /> */}
           </div>
         </Route>
 
         <Route path="/blog">
           <div className={styles.breadcrumb_view_selector}>
-            <BreadcrumbWithUrl />
+            {/* <BreadcrumbWithUrl /> */}
           </div>
-          <h1 className={styles.category_page__title}>Fruit and vegetables</h1>
+          <h1 className={styles.category_page__title}>Blog Posts</h1>
         </Route>
         <Route path="/blog_item">
           <div className={styles.breadcrumb_view_selector}>
-            <BreadcrumbsContainer />
+            {/* <BreadcrumbsContainer /> */}
           </div>
         </Route>
       </header>

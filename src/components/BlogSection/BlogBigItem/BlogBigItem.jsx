@@ -4,7 +4,7 @@ import Title from "../../Filters/Title/Title";
 import { Link } from "react-router-dom";
 
 const BlogBigItem = (props) => {
-  debugger
+  
    const imgURL =`http://localhost:7000/blog/`
 
   return (

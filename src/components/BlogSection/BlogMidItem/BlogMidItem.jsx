@@ -5,7 +5,7 @@ import Tag from "../../Footer/Tags/Tag/Tag";
 import { Link } from "react-router-dom";
 
 const BlogMidItem = (props) => {
-  debugger;
+  ;
   const imgURL = `http://localhost:7000/blog/`;
 
   return (

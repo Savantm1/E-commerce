@@ -17,7 +17,6 @@ const instance = axios.create({
        console.log('params',categoryId,page)
        return await instance.get(`/products?categoryId=${categoryId}&bestSelling=${bestSelling}&bestFromFarmers=${bestFromFarmers}&page=${page}`).then(response =>{
 
-          console.log(response.data);
           return response.data;
           })
       },
@@ -42,11 +41,25 @@ const instance = axios.create({
       async getBlogs(){
         
         return await instance.get(`blog`).then(response => {
-          console.log(response.data)
+
           return response.data;
         })
-      }
+      },
 
+      async getBlogItem(item){
+        
+        return await instance.get(`blog/${item}`).then(response => {
+          debugger
+          return response.data;
+        })
+      },
+
+      async AddComment(data){
+        return await instance.post(`comments`,data).then(response => {
+          return(response.status)
+        })
+      }
+      
   }
 
   export default API;

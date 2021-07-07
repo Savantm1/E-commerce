@@ -8,7 +8,7 @@ const BreadcrumbsContainer = (props) => {
     const category = useSelector(state => state.category.categoryProducts.category_name)
     const product = useSelector(state => state.product.product.productName)
     const productId = useSelector(state => state.product.product.id)
-
+  
   return (
     <div className="breadcrumbs__container">
       <Breadcrumbs aria-label="breadcrumb">

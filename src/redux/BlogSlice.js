@@ -5,25 +5,44 @@ export const getBlogs = createAsyncThunk('blog/getBlogs', async() => {
     
     return await API.getBlogs();
 })
+export const getBlogItem = createAsyncThunk('blog/getBlogItem', async(item) => {
+    debugger
+    return await API.getBlogItem(item);
+})
+
+export const AddCommentToServer = createAsyncThunk('blog/addCommentToServer', async(data) => {
+    debugger
+    return await API.AddComment(data);
+})
 
 export const blogSlice = createSlice ({
     name: 'blog',
     initialState: {
-        blog: []
+        blog: [],
+        blogItem: {
+            comments: []
+        }
     },
+    reducers: {
+        addComment(state,action) {
+            debugger;
+            state.blogItem.comments.push(action.payload);
+        }
+
+    },
+
     extraReducers : {
-        [getBlogs.pending] : (state,action) => {
-            state.status = "loading"
-          },
-          [getBlogs.fulfilled] : (state,action) => {
-              
+
+          [getBlogs.fulfilled] : (state,action) => {        
             state.blog = action.payload;
-            state.status = "success"
         },
-        [getBlogs.rejected] : ( state,action) => {
-          state.status = 'failed'
-        },
+        [getBlogItem.fulfilled] : (state,action) => {          
+            state.blogItem = action.payload;
+
+        }
+
     }
 })
 
+export const {addComment} = blogSlice.actions;
 export default blogSlice.reducer

@@ -61,7 +61,7 @@ function App(props) {
             )}
           />
           <Route path="/blog" render={() => <WithUrlDataBlogPage />} />
-          <Route path="/blog_item" render={() => <WithUrlDataBlogItemPage />} />
+          <Route path="/blog_item/:itemId" render={() => <WithUrlDataBlogItemPage />} />
         </div>
         <Footer />
       </div>

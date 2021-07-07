@@ -2,24 +2,26 @@ import React from "react";
 import "./CommentItem.scss";
 import avatar from '../../../assets/img/feedback-ava.png'
 const CommentItem = (props) => {
+
+  const imgURL =`http://localhost:7000/blog/`;
   return (
     <>
       <div className="comment_item">
         <div className="autor_block">
           <img
-            src={avatar}
+            src={props.data.avatar ? `${imgURL}${props.data.avatar}` : avatar}
             alt="avatar"
             className="autor_block__avatar"
           />
           <div className="autor_container">
-            <p className="autor_block__autor_name">Author <span className="autor_status">Admin</span></p>
+            <p className="autor_block__autor_name">{props.data.name} 
+            {/* <span className="autor_status">Admin</span> */}
+            </p>
             <span className="autor_block__data">17.02.22</span>
           </div>
         </div>
         <p className="comment__text">
-          Hi everyone, we have been working hard with the team bringing a new
-          articles. It has passed a few months till we released it in case of
-          traveling and shooting, hopefully you’ll love it.
+          {props.data.message}
         </p>
       </div>
     </>

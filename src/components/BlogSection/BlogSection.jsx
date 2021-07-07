@@ -12,11 +12,11 @@ import { useSelector } from "react-redux";
 
 const BlogSection = (props) => {
   const blogItemsArr = useSelector((state) => state.blog.blog);
-  debugger;
+  ;
 
   const blogMidArr = blogItemsArr.map((element, index) => {
     if (index === 3) {
-      debugger;
+      ;
       return (
         <BlogMidItem
           key={index}
@@ -36,7 +36,7 @@ const BlogSection = (props) => {
 
   const blogSmallArr = blogItemsArr.map((element, index) => {
     if (index >= 5 && index < 8) {
-      debugger;
+      ;
       return <BlogSmallItem postImg={smPostImg} key={index} data={element} />;
     }
   });
