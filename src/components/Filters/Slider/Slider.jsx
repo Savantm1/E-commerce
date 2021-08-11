@@ -34,11 +34,11 @@ const SliderPrice = (props) => {
         aria-labelledby="range-slider"
         getAriaValueText={valuetext}
       />
-      <InputPriceContainer title="min"/>
-      <InputPriceContainer title="max"/>
+      <InputPriceContainer title="min" />
+      <InputPriceContainer title="max" />
       <div className="filter__buttons_block">
-        <Button value="Apply" mr="20px"  />
-        <Button value="Reset" bg="white" cl="#A9A9A9" border="none"/>
+        <Button value="Apply" className="btn" mr="20px" />
+        <Button value="Reset" bg="white" cl="#A9A9A9" border="none" />
       </div>
     </StyledSlider>
   );

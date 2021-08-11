@@ -11,12 +11,7 @@ const BrandsData = [
 ];
 
 const BrandsItems = BrandsData.map((element, index) => {
-  return (
-    <BrandsItem
-      key={index}
-      itemName={element.itemName}
-    />
-  );
+  return <BrandsItem key={index} itemName={element.itemName} />;
 });
 
 const StyledBrands = styled.div`

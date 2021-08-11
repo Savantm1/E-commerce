@@ -1,22 +1,21 @@
-@import './../../variables.module';
+@import "./../../variables.module";
 
 .breadcrumbs__container {
-    padding: 1rem  0rem;
-    width: 50%;
+  padding: 1rem 0rem;
+  width: 50%;
 }
 
 .MuiBreadcrumbs-li,
-.MuiBreadcrumbs-separator  {
-   color:$black-active;
+.MuiBreadcrumbs-separator {
+  color: $black-active;
 }
 
-.MuiBreadcrumbs-li a[aria-current="page"]{
-    color: black;
+.MuiBreadcrumbs-li a[aria-current="page"] {
+  color: black;
 }
 
-@media screen and (max-width:1000px) {
-    
-    .breadcrumbs__container {
-        display: none;
-      }
+@media screen and (max-width: 1000px) {
+  .breadcrumbs__container {
+    display: none;
+  }
 }

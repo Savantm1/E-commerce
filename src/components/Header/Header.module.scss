@@ -13,7 +13,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 3rem;
-  // position: relative;
 }
 
 .person_block {
@@ -36,8 +35,7 @@
   font-size: 2rem;
 }
 
-@media screen and (max-width:768px) {
-
+@media screen and (max-width: 768px) {
   .navigation__container {
     display: none;
   }
@@ -46,19 +44,16 @@
     padding: 1rem 1rem 0rem;
   }
 
-
   .person_block {
     max-width: 120px;
 
     img {
-      max-width:25px;
+      max-width: 25px;
     }
   }
-
-
 }
 
-@media screen and (max-width:420px) {
+@media screen and (max-width: 420px) {
   h1 {
     font-size: 1.8rem !important;
     text-align: center;

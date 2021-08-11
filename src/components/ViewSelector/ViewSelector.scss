@@ -1,106 +1,107 @@
 @import "./../../variables.module";
 
 .view_selector {
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
-    padding: 1.5rem 0;
-    align-items: center;
-    color: darkgrey;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.5rem 0;
+  align-items: center;
+  color: darkgrey;
 
-    #grid, #inline {
-        display: none;
+  #grid,
+  #inline {
+    display: none;
+  }
+
+  .grid,
+  .inline {
+    padding-left: 1.5rem;
+    margin-right: 1.5rem;
+    position: relative;
+    cursor: pointer;
+    transition: all ease 0.3s;
+
+    &:hover {
+      text-decoration: underline;
+      color: black;
     }
 
-    .grid, .inline {
-        padding-left: 1.5rem;
-        margin-right: 1.5rem;
-        position: relative;
-        cursor: pointer;
-        transition: all ease .3s;
-        
-        &:hover {
-            text-decoration: underline;
-            color: black;
-        }
-
-        &:before {
-                content: "";
-                position: absolute;
-                left: 0;
-                top:0;
-                width: 16px;
-                height: 16px;
-                filter:grayscale(1);
-            }
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 16px;
+      height: 16px;
+      filter: grayscale(1);
     }
+  }
 
-    .grid:before {
-        background: url('./../../assets/icons/ic-layout-square-grid.svg');
-        background-size: contain;
-    }
+  .grid:before {
+    background: url("./../../assets/icons/ic-layout-square-grid.svg");
+    background-size: contain;
+  }
 
-    .inline:before {
-        background: url('./../../assets/icons/ic-layout-sections.svg');
-        background-size: contain;
-    }
+  .inline:before {
+    background: url("./../../assets/icons/ic-layout-sections.svg");
+    background-size: contain;
+  }
 
-     input[type='radio']:checked + label:before {
-        filter:grayscale(0);
-    }
+  input[type="radio"]:checked + label:before {
+    filter: grayscale(0);
+  }
 
-     input[type='radio']:checked + label {
-        color: black;
-    }
-
+  input[type="radio"]:checked + label {
+    color: black;
+  }
 }
 
 .products_block {
-    display: flex;
-    color: darkgrey;
-    align-items: center;
+  display: flex;
+  color: darkgrey;
+  align-items: center;
 
-    &__count {
-        border-radius: 25%;
-        background-color: $green_light;
-        color: $green_hover;
-        padding: 0.5rem 1rem;
-        font-weight: 600;
-        margin-right: 1rem;
-    }
+  &__count {
+    border-radius: 25%;
+    background-color: $green_light;
+    color: $green_hover;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    margin-right: 1rem;
+  }
 }
 
 .veiwselector_block {
-    position: relative;
+  position: relative;
 }
 
 .checkbox-shadow {
-    width: 90px;
-    height: 20px;
-    border: 1px solid rgb(255, 0, 0);
-    position: absolute;
-    top: -4px
+  width: 90px;
+  height: 20px;
+  border: 1px solid rgb(255, 0, 0);
+  position: absolute;
+  top: -4px;
 }
 
-@media screen and (max-width:1000px) {
-    .view_selector {
-        justify-content: flex-start;
-        padding-top: 0;
-      }
+@media screen and (max-width: 1000px) {
+  .view_selector {
+    justify-content: flex-start;
+    padding-top: 0;
+  }
 }
 
-@media screen and (max-width:768px) {
-    .view_selector {
-        width: 60%;
-    
-        .veiwselector_block {
-          min-width: 100px;
-        }
-      }
+@media screen and (max-width: 768px) {
+  .view_selector {
+    width: 60%;
+
+    .veiwselector_block {
+      min-width: 100px;
+    }
+  }
 }
 
 @media screen and (max-width: 540px) {
-    .view_selector {
-        display: none;
-    }
+  .view_selector {
+    display: none;
+  }
 }

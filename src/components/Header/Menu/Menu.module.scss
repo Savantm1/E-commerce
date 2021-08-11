@@ -1,14 +1,12 @@
-@import './../../../variables.module';
+@import "./../../../variables.module";
 
 .menu_container {
-    display: flex;
-    justify-content: flex-start;
-    padding: 1.5rem 3rem;
-    background-color: $grey;
+  display: flex;
+  justify-content: flex-start;
+  padding: 1.5rem 3rem;
+  background-color: $grey;
 
-    
-    @media screen and (max-width:768px){
-        display: none;
-    }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
-

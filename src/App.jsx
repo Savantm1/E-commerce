@@ -9,6 +9,8 @@ import "./responsive.scss";
 import MainPageContainer from "./Pages/MainPage/MainPageContainer";
 import WithUrlDataCategory from "./Pages/CategoryPage/CategoryPageContainer";
 import WithUrlProductPageContainer from "./Pages/ProductPage/ProductPageContainer";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App(props) {
   const [view, setView] = useState(false);
@@ -61,9 +63,13 @@ function App(props) {
             )}
           />
           <Route path="/blog" render={() => <WithUrlDataBlogPage />} />
-          <Route path="/blog_item/:itemId" render={() => <WithUrlDataBlogItemPage />} />
+          <Route
+            path="/blog_item/:itemId"
+            render={() => <WithUrlDataBlogItemPage />}
+          />
         </div>
         <Footer />
+        <ToastContainer />
       </div>
     </BrowserRouter>
   );

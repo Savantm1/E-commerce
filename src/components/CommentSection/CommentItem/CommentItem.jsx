@@ -1,9 +1,8 @@
 import React from "react";
 import "./CommentItem.scss";
-import avatar from '../../../assets/img/feedback-ava.png'
+import avatar from "../../../assets/img/feedback-ava.png";
 const CommentItem = (props) => {
-
-  const imgURL =`http://localhost:7000/blog/`;
+  const imgURL = `http://localhost:7000/blog/`;
   return (
     <>
       <div className="comment_item">
@@ -14,15 +13,11 @@ const CommentItem = (props) => {
             className="autor_block__avatar"
           />
           <div className="autor_container">
-            <p className="autor_block__autor_name">{props.data.name} 
-            {/* <span className="autor_status">Admin</span> */}
-            </p>
-            <span className="autor_block__data">17.02.22</span>
+            <p className="autor_block__autor_name">{props.data.name}</p>
+            <span className="autor_block__data">{props.data.createdAt}</span>
           </div>
         </div>
-        <p className="comment__text">
-          {props.data.message}
-        </p>
+        <p className="comment__text">{props.data.message}</p>
       </div>
     </>
   );

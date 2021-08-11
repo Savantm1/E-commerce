@@ -4,15 +4,12 @@ import { Carousel } from "react-responsive-carousel";
 import image from "./../../assets/img/Rectangle 26-1s3.png";
 import "./ImageCarousel.scss";
 
-
 const ImageCarousel = (props) => {
-    
   const imageArr = [{ image }, { image }, { image }];
   let slideItems = imageArr.map((elem, index) => {
     return (
-      <div key ={index}>
-        <img src={image} alt="img_"/>
-        {/* <p className="legend">Legend 1</p> */}
+      <div key={index}>
+        <img src={image} alt="img_" />
       </div>
     );
   });

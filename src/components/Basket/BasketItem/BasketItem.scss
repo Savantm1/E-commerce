@@ -1,111 +1,115 @@
 @import "./../../../variables.module";
 
 .basket_item {
-    width: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid $border;
+  margin-bottom: 1rem;
+
+  &__info_block {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid $border;
     margin-bottom: 1rem;
+    width: 100%;
+  }
+  &__img_block {
+    max-width: 100px;
+    width: 100%;
+    height: 70px;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: $grey;
+    margin-right: 1rem;
+  }
 
-    &__info_block {
-        display: flex;  
-        margin-bottom: 1rem;
-        width: 100%;
-    }
-    &__img_block {
-        max-width: 100px;
-        width:100%;
-        height: 70px;
-        border-radius: 12px;
-        overflow: hidden;
-        background-color: $grey;
-        margin-right: 1rem;
-    }
+  &__params_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 
-    &__params_block {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
+  &__parameter {
+    color: $black_active;
+    display: flex;
+    max-width: 250px;
+    width: 100%;
+    justify-content: space-between;
 
-    &__parameter {
-        color: $black_active; 
-        display: flex;
-        max-width: 250px;
-        width: 100%;
-        justify-content: space-between;
-
-        & span {
-            max-width: 150px;
-            width: 100%;
-            color: black;
-        }
+    & span {
+      max-width: 150px;
+      width: 100%;
+      color: black;
     }
+  }
 
-    .price {
-        font-size: 1.2rem;
-        font-weight: 600;
-        line-height: 27px;
-        text-transform: uppercase;
-        color: $green;
-        margin-top: 1rem;
-    }
+  .price {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: $green;
+    margin-top: 1rem;
+  }
 }
 
-.add_wish, .compare, .remove {
-    display: flex;
-    align-items: center;
+.add_wish,
+.compare,
+.remove {
+  display: flex;
+  align-items: center;
 
-    margin-top: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .remove_img {
-    max-width: 20px;
-    width: 100%;
+  max-width: 20px;
+  width: 100%;
 }
-.heart, .compare_svg, .remove_img {
-    fill:white;
-    transition: all ease 0.3s;
-    margin-right: 1rem;
-    & path {
-        stroke: #E5704B ;
-    }
+.heart,
+.compare_svg,
+.remove_img {
+  fill: white;
+  transition: all ease 0.3s;
+  margin-right: 1rem;
+  & path {
+    stroke: #e5704b;
+  }
 }
 
-.compare,.remove {
-    cursor:pointer;
-     &:hover {
-        text-decoration: underline;
-     }
+.compare,
+.remove {
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .add_wish:hover {
-    cursor:pointer;
-    text-decoration: underline;
+  cursor: pointer;
+  text-decoration: underline;
 
-    .heart {
-        fill: #E5704B  !important;
-        transition: all ease 0.3s;
-    }
+  .heart {
+    fill: #e5704b !important;
+    transition: all ease 0.3s;
+  }
 }
 
-
 .price_block {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .product_input {
-    background: $grey;
-    border: 1px solid $black_active;
-    border-radius: 12px;
-    max-width: 80px;
-    width: 100%;
-    outline: none;
-    cursor: pointer;
-    padding: 0.5rem 1rem;
-    font-weight: 600;
+  background: $grey;
+  border: 1px solid $black_active;
+  border-radius: 12px;
+  max-width: 80px;
+  width: 100%;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
 }

@@ -3,10 +3,13 @@ import { useDispatch, useSelector } from "react-redux";
 import { withRouter } from "react-router";
 import { getCategory } from "../../redux/SingleCategorySlice";
 import { getProduct } from "../../redux/SingleProductSlice";
+import { addProductToCart } from "../../redux/CartSlice";
 import ProductPage from "./ProductPage";
 
 const ProductPageContainer = (props) => {
-  ;
+  let addProduct = (product) => {
+    dispatch(addProductToCart(product));
+  };
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getProduct(props.match.params.product));
@@ -18,7 +21,6 @@ const ProductPageContainer = (props) => {
         category: props.match.params.category,
       })
     );
-    ;
   }, [dispatch, props.match.params]);
 
   const productData = useSelector((state) => state.product.product);
@@ -31,6 +33,7 @@ const ProductPageContainer = (props) => {
       productData={productData ? productData : []}
       products={products ? products : []}
       category={props.match.params.category}
+      addProduct={addProduct}
     />
   );
 };

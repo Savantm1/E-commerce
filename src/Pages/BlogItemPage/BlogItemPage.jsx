@@ -12,30 +12,18 @@ import postImg from "../../assets/img/Rectangle 26-2 s.png";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
-
-
 const BlogItemPage = (props) => {
-debugger
   const blogItemsArr = useSelector((state) => state.blog.blog);
-  ;
-
   const blogMidArr = blogItemsArr.map((element, index) => {
-    if (index < 4 ) {
-      ;
-      return (
-        <BlogMidItem
-          key={index}
-          data={element}
-          postImg={postImg}
-        />
-      );
+    if (index < 4) {
+      return <BlogMidItem key={index} data={element} postImg={postImg} />;
     }
+    return null;
   });
 
-  
   return (
     <>
-      <BlogItemLarge data={props.itemData}/>
+      <BlogItemLarge data={props.itemData} />
       <div className="blog_item_page">
         <aside className="back_block">
           <Link to="/blog" className="back" alt="back">
@@ -44,26 +32,16 @@ debugger
           </Link>
         </aside>
         <div className="blog_item_page__container">
-          <p className="blog_item_page__text">
-            {props.itemData.description}
-          </p>
+          <p className="blog_item_page__text">{props.itemData.description}</p>
           <h4 className="blog_item_page__subtitle">
             Morning Ritual // 9:00 AM
           </h4>
-          <p className="blog_item_page__text">
-            {props.itemData.description}
-          </p>
+          <p className="blog_item_page__text">{props.itemData.description}</p>
           <h4 className="blog_item_page__subtitle">Mid-day Boost // 2:00 PM</h4>
-          <p className="blog_item_page__text">
-            {props.itemData.description}
-          </p>
-          <p className="blog_item_page__text">
-            {props.itemData.description}
-          </p>
+          <p className="blog_item_page__text">{props.itemData.description}</p>
+          <p className="blog_item_page__text">{props.itemData.description}</p>
           <h4 className="blog_item_page__subtitle">Evening Calm // 8:00 PM</h4>
-          <p className="blog_item_page__text">
-            {props.itemData.description}
-          </p>
+          <p className="blog_item_page__text">{props.itemData.description}</p>
           <div className="share_block">
             Share
             <a href="/#" className="share" alt="vk">
@@ -79,13 +57,16 @@ debugger
               Facebook
             </a>
           </div>
-          <CommentSection data = {props.itemData.comments} blogItemId = {props.itemData.id}/>
+          <CommentSection
+            data={props.itemData.comments}
+            blogItemId={props.itemData.id}
+          />
         </div>
       </div>
       <section className="releated_section">
-          <Title width="100%"> Releated topics</Title>
-          {blogMidArr}
-        </section>
+        <Title width="100%"> Releated topics</Title>
+        {blogMidArr}
+      </section>
     </>
   );
 };

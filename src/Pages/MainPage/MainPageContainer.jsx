@@ -5,7 +5,6 @@ import { getProducts } from "../../redux/ProductsSlice";
 import MainPage from "./MainPage";
 
 const MainPageContainer = (props) => {
-  ;
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(
@@ -20,7 +19,6 @@ const MainPageContainer = (props) => {
   );
   const bestSellingsArray = productsArray.filter((elem) => elem.bestSelling);
 
-  ;
   const countProducts = 3;
 
   return (

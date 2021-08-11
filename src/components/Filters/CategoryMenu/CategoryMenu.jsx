@@ -4,36 +4,38 @@ import "./CategoryMenu.scss";
 import { Link } from "react-router-dom";
 
 const CategoryMenu = (props) => {
-  
-
   const linksElements = props.categories.map((element, index) => {
-    if(props.bestSelling){
-      return(
-      <li key={index} className="category_menu__item">
-        <Link className="category_menu__link" to={`/category/${element.id}/bestSelling`}>
-        {element.category_name}
-      </Link>
-      </li>
-      )
-    } else if(props.bestFromFarmers){
-      return(
+    if (props.bestSelling) {
+      return (
         <li key={index} className="category_menu__item">
-          <Link className="category_menu__link" to={`/category/${element.id}/bestFromFarmers`}>
-          {element.category_name}
-        </Link>
+          <Link
+            className="category_menu__link"
+            to={`/category/${element.id}/bestSelling`}
+          >
+            {element.category_name}
+          </Link>
         </li>
-        )
+      );
+    } else if (props.bestFromFarmers) {
+      return (
+        <li key={index} className="category_menu__item">
+          <Link
+            className="category_menu__link"
+            to={`/category/${element.id}/bestFromFarmers`}
+          >
+            {element.category_name}
+          </Link>
+        </li>
+      );
     } else {
-      return(
-         <li key={index} className="category_menu__item">
+      return (
+        <li key={index} className="category_menu__item">
           <Link className="category_menu__link" to={`#`}>
-          {element.category_name}
-        </Link>
+            {element.category_name}
+          </Link>
         </li>
-      )
+      );
     }
-
-    ;
   });
 
   return (

@@ -10,7 +10,7 @@ let navItemsArr = [
 
 let NavItems = navItemsArr.map((element, index) => {
   return (
-    <li key= { index } className={styles.info_list__item}>
+    <li key={index} className={styles.info_list__item}>
       <NavLink className={styles.info_list__link} to={`/${element.url}`}>
         {element.name}
       </NavLink>

@@ -61,7 +61,7 @@ const Footer = (props) => {
             <Tags />
           </div>
           <div className={styles.navigation_container}>
-            <Navigation/> 
+            <Navigation />
           </div>
         </div>
       </footer>

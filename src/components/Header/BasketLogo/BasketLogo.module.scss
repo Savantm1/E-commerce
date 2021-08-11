@@ -1,29 +1,28 @@
 @import "../../../variables.module.scss";
 
 .basket_block {
-    position: relative;
-    
+  position: relative;
 }
 
 .basket {
-    width:30px;
-    cursor: pointer;
+  width: 30px;
+  cursor: pointer;
 }
 
 .counter {
-    position: absolute;
-    left:-4px;
-    top:17px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $orange;
-    border-radius: 50%;
-    width:16px;
-    height: 16px;
-    color: #fff;
-    padding: 2px;
-    font-size: 1rem;
-    font-weight: 600;
+  position: absolute;
+  left: -4px;
+  top: 17px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $orange;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  color: #fff;
+  padding: 2px;
+  font-size: 1rem;
+  font-weight: 600;
 }

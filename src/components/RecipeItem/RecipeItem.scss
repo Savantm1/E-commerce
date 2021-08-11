@@ -1,48 +1,46 @@
 .recipe {
-    position: relative;
-    width: 48%;
-    height: 280px;
-    border-radius: 12px;
-    padding: 4rem 3rem 3rem;
-    background: url("./../../assets/img/Banner.png");
+  position: relative;
+  width: 48%;
+  height: 280px;
+  border-radius: 12px;
+  padding: 4rem 3rem 3rem;
+  background: url("./../../assets/img/Banner.png");
 
-    &__subtitle {
-        font-size: 1.3rem;
-        font-weight: 600;
-        color: #6A983C;
-        margin-bottom: 0.5rem
-    }
+  &__subtitle {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #6a983c;
+    margin-bottom: 0.5rem;
+  }
 
-    &__title {
-        color: #151515;
-        font-weight: 600;
-        font-size: 1.8rem;
-    }
+  &__title {
+    color: #151515;
+    font-weight: 600;
+    font-size: 1.8rem;
+  }
 
-    &__btn {
-        position: absolute;
-        bottom:32px;
-    }
+  &__btn {
+    position: absolute;
+    bottom: 32px;
+  }
 }
 
-@media screen and (max-width:768px) {
-    .recipe {
-        height: 200px;
-      }
+@media screen and (max-width: 768px) {
+  .recipe {
+    height: 200px;
+  }
 }
 
 @media screen and (max-width: 540px) {
+  .recipe {
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 
-    .recipe {
-        width: 100%;
-        margin-bottom: 1rem;
-        display: flex;
-        flex-direction: column;
-        align-items:flex-end;
-
-        &__subtitle {
-            width: 100%;
-        }
-
+    &__subtitle {
+      width: 100%;
     }
+  }
 }

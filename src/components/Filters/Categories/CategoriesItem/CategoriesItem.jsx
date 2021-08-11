@@ -13,12 +13,11 @@ const StyledCategoriesItem = styled.li`
 `;
 
 const CategoriesItem = (props) => {
-
   return (
-      <StyledCategoriesItem {...props}>
-          {props.itemName}
-        <ItemCounter count={props.count} />
-      </StyledCategoriesItem>
+    <StyledCategoriesItem {...props}>
+      {props.itemName}
+      <ItemCounter count={props.count} />
+    </StyledCategoriesItem>
   );
 };
 

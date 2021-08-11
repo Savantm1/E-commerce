@@ -1,6 +1,5 @@
 @import "../../variables.module";
 
-
 .breadcrumb_view_selector {
   display: flex;
   align-items: center;
@@ -27,8 +26,6 @@
       border-radius: 12px;
       overflow: hidden;
       margin-bottom: 2rem;
-      // width: 100%;
-      // height: 100%;
 
       & > img {
         max-height: 400px;
@@ -39,7 +36,6 @@
 }
 
 .description_block {
-  
   flex: 1.2;
 
   .rating_block {
@@ -343,11 +339,7 @@
 }
 
 @media screen and (max-width: 400px) {
-
-
-
   .description_block {
-
     h3 {
       text-align: center;
       font-size: 1.8rem;

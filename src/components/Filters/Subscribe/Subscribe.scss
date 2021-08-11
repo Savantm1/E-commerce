@@ -1,43 +1,43 @@
 @import "../../../variables.module";
 
 .subscribe {
-    max-width: 270px;
-    
-    &_description {
-        color: $black_active;
-        line-height: 20px;
-    }
-    
-    &__input_block {
-        background: $grey;
-        padding: 0.5rem 1rem 1rem 1.5rem;
-        border: 2px solid $border;
-        border-radius: 12px;
-        display: flex;
-        margin-top: 1rem;
-    }
+  max-width: 270px;
 
-    &__input {
-        border:none;
-        outline:none;
-        background-color: initial;
-        max-width: 150px;
-        &::placeholder {
-            color: $black_active;
-        }
-    }
+  &_description {
+    color: $black_active;
+    line-height: 20px;
+  }
 
-    .subscribe_btn {
-        border:none;
-        font-size: 1rem;
-        line-height: 1.5rem;
-        font-weight: 700;
-        cursor:pointer;
-        transition: all ease .3s;
-        outline: none;
-        
-        &:hover {
-            transform: scale(1.05);
-        }
+  &__input_block {
+    background: $grey;
+    padding: 0.5rem 1rem 1rem 1.5rem;
+    border: 2px solid $border;
+    border-radius: 12px;
+    display: flex;
+    margin-top: 1rem;
+  }
+
+  &__input {
+    border: none;
+    outline: none;
+    background-color: initial;
+    max-width: 150px;
+    &::placeholder {
+      color: $black_active;
     }
+  }
+
+  .subscribe_btn {
+    border: none;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all ease 0.3s;
+    outline: none;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
 }

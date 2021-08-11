@@ -1,31 +1,31 @@
- @import "./_variables.module.scss"; 
+@import "./_variables.module.scss";
 
- @font-face {
-  font-family: 'Poppins';
-  src: url('./assets/fonts/Poppins-Regular.ttf') ;
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Regular.ttf");
   font-weight: 400;
 }
 
 @font-face {
-  font-family: 'Poppins';
-  src: url('./assets/fonts/Poppins-Medium.ttf') ;
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Medium.ttf");
   font-weight: 500;
 }
 
 @font-face {
-  font-family: 'Poppins';
-  src: url('./assets/fonts/Poppins-SemiBold.ttf') ;
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-SemiBold.ttf");
   font-weight: 600;
 }
 
 @font-face {
-  font-family: 'Poppins';
-  src: url('./assets/fonts/Poppins-Bold.ttf') ;
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Bold.ttf");
   font-weight: 700;
 }
 
 img {
-  width :100%;
+  width: 100%;
 }
 
 * {
@@ -40,24 +40,23 @@ img {
 
 html {
   font-size: 14px;
-  color: $black; 
+  color: $black;
 }
 
 a {
-  color: $black; 
+  color: $black;
 }
 
 .app {
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-image: url('./assets/img/background.jpg');
+  background-image: url("./assets/img/background.jpg");
   min-height: 100vh;
-  margin:0 auto;
+  margin: 0 auto;
   position: relative;
 }
-
 
 .body__container {
   max-width: 1260px;
@@ -67,9 +66,8 @@ a {
 }
 
 .MuiSlider-root {
-  color:$green !important;
+  color: $green !important;
 }
-
 
 @mixin desktop {
   html {
@@ -77,14 +75,13 @@ a {
   }
 }
 
-@media screen and (max-width:1000px) {
-
+@media screen and (max-width: 1000px) {
   html {
     font-size: 12px;
   }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .body__container {
     padding: 0 1rem;
   }

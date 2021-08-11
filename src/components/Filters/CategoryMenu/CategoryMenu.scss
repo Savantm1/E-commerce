@@ -1,28 +1,26 @@
 @import "./../../../variables.module";
 
 .category_menu {
-   
-   &__list {
-        margin-top: 1rem;
-    }
+  &__list {
+    margin-top: 1rem;
+  }
 
-    &__item {
-        margin-bottom: 1rem;
-    }
+  &__item {
+    margin-bottom: 1rem;
+  }
 
-    &__link {
-        color: #6A983C;
-        font-size: 1rem;
-        font-weight: 40;
-        text-decoration: underline;
-    }
+  &__link {
+    color: #6a983c;
+    font-size: 1rem;
+    font-weight: 40;
+    text-decoration: underline;
+  }
 
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
-
-@media screen and (max-width:1000px) {
-    .category_menu {
-        display: none;
-      }
+@media screen and (max-width: 1000px) {
+  .category_menu {
+    display: none;
   }
+}

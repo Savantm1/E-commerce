@@ -15,7 +15,7 @@ const CategoryPageContainer = (props) => {
         limit: 9,
       })
     );
-    dispatch(selectPage(1))
+    dispatch(selectPage(1));
   }, [
     dispatch,
     props.match.params.category,
@@ -23,18 +23,18 @@ const CategoryPageContainer = (props) => {
     props.bestSelling,
   ]);
 
-  const currentPage = useSelector(state=> state.category.currentPage);
+  const currentPage = useSelector((state) => state.category.currentPage);
   const changePageFunc = (page) => {
-      dispatch(selectPage(page));
-      dispatch(
-          getCategory({
-            category: props.match.params.category,
-            limit: 9,
-            page
-          })
-        );
-        window.scrollTo( 0, 0 );
-  }
+    dispatch(selectPage(page));
+    dispatch(
+      getCategory({
+        category: props.match.params.category,
+        limit: 9,
+        page,
+      })
+    );
+    window.scrollTo(0, 0);
+  };
 
   const categoryProductsData = useSelector(
     (state) => state.category.categoryProducts.products

@@ -4,7 +4,6 @@ import styled from "styled-components";
 const StyledButton = styled.button`
   box-sizing: border-box;
   cursor: pointer;
-  /* min-width: 100px; */
   padding: 0.5rem 1rem;
   width: ${(props) => props.width || "auto"};
   font-weight: 700;
