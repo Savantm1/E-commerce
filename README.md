@@ -6,11 +6,11 @@ h1 Описание проекта:
 - assets - картинки, шрифты, иконки;
 - components - компоненты;
 - Pages - страницы сайта;
-- redux - state-manager;
+- redux - state-manager.
 
 Stack:
-  Back-end: Node.js, express, PostgreSQL,sequelize (Репозиторий https://github.com/Savantm1/e-commerce-backend).
-  Front-end: React, Redux Toolkit.
+  - Back-end: Node.js, express, PostgreSQL,sequelize (Репозиторий https://github.com/Savantm1/e-commerce-backend);
+  - Front-end: React, Redux Toolkit.
 
 Данный проект является учебным и имитирует интернет магазин для покупки продуктов и ведения блога с возможностью комментирования постов.
 
