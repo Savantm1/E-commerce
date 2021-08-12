@@ -39,7 +39,7 @@ Stack:
   - Слайдер с отзывами покупателей;
   - Секция с другими блог-постами;
   - Теги.
-![alt text](descriptionProject/MainPage-1.PNG )
+![alt text](descriptionProject/main.png )
 
 ### Страница категории
 
@@ -54,8 +54,8 @@ Stack:
   
   - Продукты категории.
   
-![alt text](descriptionProject/MainPage-1.PNG )
-
+![alt text](descriptionProject/category.png)
+![alt text](descriptionProject/category_1.png)
 
 ### Страница товара:
 
@@ -68,6 +68,8 @@ Stack:
  - БЖУ;
  - Другие товары этой категории.
 
+![alt text](descriptionProject/product.png)
+
 ### Страница Блога:
 
 Страница состоит из: 
@@ -75,6 +77,10 @@ Stack:
  - Блок с формой для добавления коментария;
  - Уже имеющиеся коментарии на странице;
  - Другие посты.
+ - 
+![alt text](descriptionProject/blog.png)
 
 ### Остальной контент:
 В Header присутствует иконка корзины, к которой можно редактировать данные о заказе( Информация о наполнении корзины хранится в localStorage). Также  присутствует иконка авторизации (функционал дорабатывается).
+
+![alt text](descriptionProject/basket.JPG)
