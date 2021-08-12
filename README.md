@@ -9,7 +9,7 @@
 - redux - state-manager.
 
 Stack:
-  - Back-end: Node.js, express, PostgreSQL,sequelize (Репозиторий https://github.com/Savantm1/e-commerce-backend);
+  - Back-end: Node.js, express, PostgreSQL, sequelize (Репозиторий https://github.com/Savantm1/e-commerce-backend);
   - Front-end: React, Redux Toolkit.
 
 Данный проект является учебным и имитирует интернет магазин для покупки продуктов и ведения блога с возможностью комментирования постов.
@@ -39,6 +39,7 @@ Stack:
   - Слайдер с отзывами покупателей;
   - Секция с другими блог-постами;
   - Теги.
+ 
 ![alt text](descriptionProject/main.png )
 
 ### Страница категории
